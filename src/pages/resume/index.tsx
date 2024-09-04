@@ -1,5 +1,7 @@
-const ResumePage = () => {
-  return <main></main>
-}
+import Resume from "../../components/resume";
 
-export default ResumePage
+const ResumePage = () => {
+  return <Resume />;
+};
+
+export default ResumePage;

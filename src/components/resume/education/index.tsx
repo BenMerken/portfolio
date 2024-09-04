@@ -1,7 +1,11 @@
-import { View } from '@react-pdf/renderer'
+import { Text, View } from "@react-pdf/renderer";
 
 const Education = () => {
-  return <View>Education</View>
-}
+  return (
+    <View>
+      <Text>Education</Text>
+    </View>
+  );
+};
 
-export default Education
+export default Education;

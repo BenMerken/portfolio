@@ -1,7 +1,11 @@
-import { View } from '@react-pdf/renderer'
+import { Text, View } from "@react-pdf/renderer";
 
 const Experience = () => {
-  return <View>Experience</View>
-}
+  return (
+    <View>
+      <Text>Experience</Text>
+    </View>
+  );
+};
 
-export default Experience
+export default Experience;
