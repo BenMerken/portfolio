@@ -1,7 +1,8 @@
-import Resume from "../../components/resume";
+import Resume from '../../components/resume'
+import resumeData from '../../components/resume/data/nl'
 
 const ResumePage = () => {
-  return <Resume />;
-};
+  return <Resume data={resumeData} />
+}
 
-export default ResumePage;
+export default ResumePage
