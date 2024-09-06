@@ -10,7 +10,7 @@ type Period = {
 }
 
 type BioItem = {
-  emoji: string
+  imgSrc: string
   name: string
 }
 
@@ -23,7 +23,7 @@ export type Bio = {
   website: BioItem
   hobbies: {
     name: string
-    emoji: string
+    imgSrc: string
   }[]
 }
 
@@ -39,6 +39,12 @@ export type Education = {
   period: Period
 }[]
 
+export type Certifications = {
+  name: string
+  institution: string
+  date: string
+}[]
+
 export type Skills = {
   category: string
   skills: string[]
@@ -52,6 +58,7 @@ export type Experience = {
 export type Resume = {
   bio: Bio
   education: Education
+  certifications: Certifications
   experience: Experience
   skills: Skills
 }

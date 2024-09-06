@@ -6,20 +6,20 @@ const data: Resume = {
     lastName: 'Merken',
     jobTitle: 'Fullstack webontwikkelaar',
     phone: {
-      emoji: '',
+      imgSrc: 'phone.svg',
       name: '+32 489 43 21 30',
     },
     email: {
-      emoji: '',
+      imgSrc: 'email.svg',
       name: 'ben.merken@gmail.com',
     },
     website: {
-      emoji: '',
+      imgSrc: 'github.svg',
       name: 'https://www.github.com/benmerken/',
     },
     hobbies: [
-      { emoji: '', name: 'Klassieke gitaar' },
-      { emoji: '', name: 'Lezen' },
+      { imgSrc: 'guitar.svg', name: 'Klassieke gitaar' },
+      { imgSrc: 'books.svg', name: 'Lezen' },
     ],
   },
   education: [
@@ -42,6 +42,13 @@ const data: Resume = {
           year: '2021',
         },
       },
+    },
+  ],
+  certifications: [
+    {
+      institution: 'Amazon Web Services',
+      name: '',
+      date: 'Augustus 2021',
     },
   ],
   experience: [],

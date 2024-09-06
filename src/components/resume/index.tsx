@@ -1,10 +1,16 @@
-import { Document, Page, PDFViewer, StyleSheet } from '@react-pdf/renderer'
+import {
+  Document,
+  Page,
+  PDFViewer,
+  StyleSheet,
+  View,
+} from '@react-pdf/renderer'
 
 import Education from './education'
 import Experience from './experience'
+import Personalia from './personalia'
 import classes from './resume.module.scss'
 import Skills from './skills'
-import Top from './top'
 import { Resume as ResumeData } from '../../types/resume'
 
 type ResumeProps = {
@@ -14,7 +20,24 @@ type ResumeProps = {
 const documentStyles = StyleSheet.create({
   page: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
+
+    fontFamily: 'Helvetica',
+    fontSize: '11pt',
+  },
+  left: {
+    flex: 1,
+    minHeight: '100vh',
+
+    padding: 30,
+
+    backgroundColor: '#283135',
+    color: '#FFFFFF',
+  },
+  right: {
+    flex: 2,
+
+    padding: 30,
   },
 })
 
@@ -23,10 +46,14 @@ const Resume = ({ data }: ResumeProps) => {
     <PDFViewer className={classes.pdfViewer}>
       <Document author="Ben Merken" title="CV Ben Merken">
         <Page size="A4" orientation="portrait" style={documentStyles.page}>
-          <Top data={data.bio} />
-          <Education data={data.education} />
-          <Experience data={data.experience} />
-          <Skills data={data.skills} />
+          <View style={documentStyles.left}>
+            <Personalia data={data.bio} />
+          </View>
+          <View style={documentStyles.right}>
+            <Education data={data.education} />
+            <Experience data={data.experience} />
+            <Skills data={data.skills} />
+          </View>
         </Page>
       </Document>
     </PDFViewer>
