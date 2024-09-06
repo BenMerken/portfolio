@@ -1,3 +1,5 @@
+import { ReactNode } from 'react'
+
 type Period = {
   start: {
     month: string
@@ -10,7 +12,7 @@ type Period = {
 }
 
 type BioItem = {
-  imgSrc: string
+  svg: ReactNode
   name: string
 }
 
@@ -23,7 +25,7 @@ export type Bio = {
   website: BioItem
   hobbies: {
     name: string
-    imgSrc: string
+    svg: ReactNode
   }[]
 }
 

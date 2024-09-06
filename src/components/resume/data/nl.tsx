@@ -1,4 +1,7 @@
+import EmailSVG from './svg-components/email'
+
 import { Resume } from '../../../types/resume'
+import BooksSVG from './svg-components/books'
 
 const data: Resume = {
   bio: {
@@ -6,20 +9,20 @@ const data: Resume = {
     lastName: 'Merken',
     jobTitle: 'Fullstack webontwikkelaar',
     phone: {
-      imgSrc: 'phone.svg',
+      svg: 'phone.svg',
       name: '+32 489 43 21 30',
     },
     email: {
-      imgSrc: 'email.svg',
+      svg: <EmailSVG />,
       name: 'ben.merken@gmail.com',
     },
     website: {
-      imgSrc: 'github.svg',
+      svg: 'github.svg',
       name: 'https://www.github.com/benmerken/',
     },
     hobbies: [
-      { imgSrc: 'guitar.svg', name: 'Klassieke gitaar' },
-      { imgSrc: 'books.svg', name: 'Lezen' },
+      { svg: 'guitar.svg', name: 'Klassieke gitaar' },
+      { svg: <BooksSVG />, name: 'Lezen' },
     ],
   },
   education: [

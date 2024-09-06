@@ -24,13 +24,15 @@ const personaliaStyles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
   },
-  contactItems: {
+  items: {
     display: 'flex',
     flexDirection: 'column',
     gap: 8,
   },
-  contactItem: {
+  item: {
     display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
     gap: 8,
   },
   contactImage: {
@@ -55,20 +57,21 @@ const Personalia = ({
         <Text>{jobTitle}</Text>
       </View>
       <Text style={personaliaStyles.title}>Contact</Text>
-      <View style={personaliaStyles.contactItems}>
+      <View style={personaliaStyles.items}>
         {Object.keys(items).map((itemKey) => (
-          <View style={personaliaStyles.contactItem}>
-            <Image
-              style={personaliaStyles.contactImage}
-              src={items[itemKey as keyof typeof items].imgSrc}
-            />
+          <View style={personaliaStyles.item}>
+            {items[itemKey as keyof typeof items].svg}
             <Text>{items[itemKey as keyof typeof items].name}</Text>
           </View>
         ))}
       </View>
-      <View>
+      <Text>Hobby's</Text>
+      <View style={personaliaStyles.items}>
         {hobbies.map((hobby, i) => (
-          <Text key={i}>{hobby.name}</Text>
+          <View style={personaliaStyles.item}>
+            {hobby.svg}
+            <Text key={i}>{hobby.name}</Text>
+          </View>
         ))}
       </View>
     </View>
