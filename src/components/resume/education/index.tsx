@@ -1,10 +1,10 @@
-import { Text, View } from '@react-pdf/renderer'
+import { Text, View } from '@react-pdf/renderer';
 
-import { Education as ResumeEducation } from '../../../types/resume'
+import { Education as ResumeEducation } from '../../../types/resume';
 
 export type EducationProps = {
-  data: ResumeEducation
-}
+  data: ResumeEducation;
+};
 
 const Education = ({ data }: EducationProps) => {
   return (
@@ -16,7 +16,7 @@ const Education = ({ data }: EducationProps) => {
         </View>
       ))}
     </View>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;

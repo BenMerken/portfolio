@@ -1,10 +1,10 @@
-import { Text, View } from '@react-pdf/renderer'
+import { Text, View } from '@react-pdf/renderer';
 
-import { Skills as ResumeSkills } from '../../../types/resume'
+import { Skills as ResumeSkills } from '../../../types/resume';
 
 type SkillsProps = {
-  data: ResumeSkills
-}
+  data: ResumeSkills;
+};
 
 const Skills = ({ data }: SkillsProps) => {
   return (
@@ -18,7 +18,7 @@ const Skills = ({ data }: SkillsProps) => {
         </View>
       ))}
     </View>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

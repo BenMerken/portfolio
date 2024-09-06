@@ -1,4 +1,4 @@
-import { Svg, Path } from '@react-pdf/renderer'
+import { Svg, Path } from '@react-pdf/renderer';
 
 const EmailSVG = () => {
   return (
@@ -11,7 +11,7 @@ const EmailSVG = () => {
         stroke-linejoin="round"
       />
     </Svg>
-  )
-}
+  );
+};
 
-export default EmailSVG
+export default EmailSVG;

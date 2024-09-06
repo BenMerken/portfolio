@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -6,9 +6,9 @@ const HomePage = () => {
       <h1>Ben Merken</h1>
       <p>Coming soon...</p>
 
-      <Link to='resume'>To resume</Link>
+      <Link to="resume">To resume</Link>
     </main>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

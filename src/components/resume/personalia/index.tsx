@@ -1,18 +1,18 @@
-import { Image, StyleSheet, Text, View } from '@react-pdf/renderer'
+import { Image, StyleSheet, Text, View } from '@react-pdf/renderer';
 
-import { Bio } from '../../../types/resume'
+import { Bio } from '../../../types/resume';
 
 type PersonaliaProps = {
-  data: Bio
-}
+  data: Bio;
+};
 
 const personaliaStyles = StyleSheet.create({
   title: {
     fontSize: '14pt',
-    textTransform: 'uppercase',
+    textTransform: 'uppercase'
   },
   avatar: {
-    marginBottom: 16,
+    marginBottom: 16
   },
   top: {
     display: 'flex',
@@ -22,27 +22,27 @@ const personaliaStyles = StyleSheet.create({
     textTransform: 'uppercase',
     fontWeight: 'bold',
     fontSize: 16,
-    textAlign: 'center',
+    textAlign: 'center'
   },
   items: {
     display: 'flex',
     flexDirection: 'column',
-    gap: 8,
+    gap: 8
   },
   item: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 8
   },
   contactImage: {
     width: 40,
-    height: 40,
-  },
-})
+    height: 40
+  }
+});
 
 const Personalia = ({
-  data: { firstName, lastName, jobTitle, hobbies, ...items },
+  data: { firstName, lastName, jobTitle, hobbies, ...items }
 }: PersonaliaProps) => {
   return (
     <View>
@@ -75,7 +75,7 @@ const Personalia = ({
         ))}
       </View>
     </View>
-  )
-}
+  );
+};
 
-export default Personalia
+export default Personalia;

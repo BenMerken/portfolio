@@ -3,19 +3,19 @@ import {
   Page,
   PDFViewer,
   StyleSheet,
-  View,
-} from '@react-pdf/renderer'
+  View
+} from '@react-pdf/renderer';
 
-import Education from './education'
-import Experience from './experience'
-import Personalia from './personalia'
-import classes from './resume.module.scss'
-import Skills from './skills'
-import { Resume as ResumeData } from '../../types/resume'
+import Education from './education';
+import Experience from './experience';
+import Personalia from './personalia';
+import classes from './resume.module.scss';
+import Skills from './skills';
+import { Resume as ResumeData } from '../../types/resume';
 
 type ResumeProps = {
-  data: ResumeData
-}
+  data: ResumeData;
+};
 
 const documentStyles = StyleSheet.create({
   page: {
@@ -23,7 +23,7 @@ const documentStyles = StyleSheet.create({
     flexDirection: 'row',
 
     fontFamily: 'Helvetica',
-    fontSize: '11pt',
+    fontSize: '11pt'
   },
   left: {
     flex: 1,
@@ -32,14 +32,14 @@ const documentStyles = StyleSheet.create({
     padding: 30,
 
     backgroundColor: '#283135',
-    color: '#FFFFFF',
+    color: '#FFFFFF'
   },
   right: {
     flex: 2,
 
-    padding: 30,
-  },
-})
+    padding: 30
+  }
+});
 
 const Resume = ({ data }: ResumeProps) => {
   return (
@@ -57,7 +57,7 @@ const Resume = ({ data }: ResumeProps) => {
         </Page>
       </Document>
     </PDFViewer>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
