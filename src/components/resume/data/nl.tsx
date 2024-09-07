@@ -22,7 +22,7 @@ const data: Resume = {
     },
     website: {
       svg: <GlobeSVG />,
-      name: 'https://www.benmerken.com'
+      name: 'https://www.benmerken.com/'
     },
     github: {
       svg: <GithubSVG />,

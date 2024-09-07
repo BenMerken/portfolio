@@ -16,7 +16,10 @@ const personaliaStyles = StyleSheet.create({
   },
   title: {
     fontSize: '14pt',
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
+
+    letterSpacing: 8,
+    marginBottom: 16
   },
   avatar: {
     marginBottom: 16
@@ -28,12 +31,15 @@ const personaliaStyles = StyleSheet.create({
 
     fontWeight: 'bold',
     fontSize: '16pt',
-    textAlign: 'center'
+    textAlign: 'center',
+    letterSpacing: 0
   },
   items: {
     display: 'flex',
     flexDirection: 'column',
-    gap: 8
+    gap: 4,
+
+    marginBottom: 32
   },
   item: {
     display: 'flex',
@@ -58,7 +64,7 @@ const Personalia = ({
           src="male-avatar-placeholder.png"
         />
         <View style={{ ...personaliaStyles.title, ...personaliaStyles.top }}>
-          <Text>
+          <Text style={personaliaStyles.title}>
             {firstName} {lastName}
           </Text>
           <Text>{jobTitle}</Text>

@@ -26,17 +26,15 @@ const documentStyles = StyleSheet.create({
     fontSize: '11pt'
   },
   left: {
-    flex: 1,
     minHeight: '100vh',
 
-    padding: 30,
+    padding: 24,
+    width: 240,
 
     backgroundColor: '#283135',
     color: '#FFFFFF'
   },
   right: {
-    flex: 2,
-
     padding: 30
   }
 });
