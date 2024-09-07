@@ -1,6 +1,6 @@
 import { Text, View } from '@react-pdf/renderer';
 
-import { Experience as ResumeExperience } from '../../../types/resume';
+import { Experience as ResumeExperience } from '@/types/resume';
 
 type ExperienceProps = {
   data: ResumeExperience;

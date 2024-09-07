@@ -1,11 +1,11 @@
-import EmailSVG from './svg-components/email';
-
-import { Resume } from '../../../types/resume';
-import BooksSVG from './svg-components/books';
-import ColumnSVG from './svg-components/colmn';
-import GithubSVG from './svg-components/github.';
-import GuitarSVG from './svg-components/guitar';
-import PhoneSVG from './svg-components/phone';
+import BooksSVG from '@/components/resume/data/svg-components/books';
+import ColumnSVG from '@/components/resume/data/svg-components/colmn';
+import EmailSVG from '@/components/resume/data/svg-components/email';
+import GithubSVG from '@/components/resume/data/svg-components/github.';
+import GlobeSVG from '@/components/resume/data/svg-components/globe';
+import GuitarSVG from '@/components/resume/data/svg-components/guitar';
+import PhoneSVG from '@/components/resume/data/svg-components/phone';
+import { Resume } from '@/types/resume';
 
 const data: Resume = {
   bio: {
@@ -21,6 +21,10 @@ const data: Resume = {
       name: 'ben.merken@gmail.com'
     },
     website: {
+      svg: <GlobeSVG />,
+      name: 'https://www.benmerken.com'
+    },
+    github: {
       svg: <GithubSVG />,
       name: 'https://www.github.com/benmerken/'
     },

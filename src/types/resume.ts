@@ -23,6 +23,7 @@ export type Bio = {
   phone: BioItem;
   email: BioItem;
   website: BioItem;
+  github: BioItem;
   hobbies: {
     name: string;
     svg: ReactNode;

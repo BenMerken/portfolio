@@ -1,6 +1,6 @@
 import { Text, View } from '@react-pdf/renderer';
 
-import { Education as ResumeEducation } from '../../../types/resume';
+import { Education as ResumeEducation } from '@/types/resume';
 
 export type EducationProps = {
   data: ResumeEducation;

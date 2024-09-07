@@ -6,12 +6,12 @@ import {
   View
 } from '@react-pdf/renderer';
 
-import Education from './education';
-import Experience from './experience';
-import Personalia from './personalia';
-import classes from './resume.module.scss';
-import Skills from './skills';
-import { Resume as ResumeData } from '../../types/resume';
+import Education from '@/components/resume/education';
+import Experience from '@/components/resume/experience';
+import Personalia from '@/components/resume/personalia';
+import classes from '@/components/resume/resume.module.scss';
+import Skills from '@/components/resume/skills';
+import { Resume as ResumeData } from '@/types/resume';
 
 type ResumeProps = {
   data: ResumeData;

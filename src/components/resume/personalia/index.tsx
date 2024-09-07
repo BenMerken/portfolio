@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View } from '@react-pdf/renderer';
 
-import { Bio } from '../../../types/resume';
+import { Bio } from '@/types/resume';
 
 type PersonaliaProps = {
   data: Bio;
@@ -58,8 +58,8 @@ const Personalia = ({
       </View>
       <Text style={personaliaStyles.title}>Contact</Text>
       <View style={personaliaStyles.items}>
-        {Object.keys(items).map((itemKey) => (
-          <View style={personaliaStyles.item}>
+        {Object.keys(items).map((itemKey, i) => (
+          <View key={i} style={personaliaStyles.item}>
             {items[itemKey as keyof typeof items].svg}
             <Text>{items[itemKey as keyof typeof items].name}</Text>
           </View>
@@ -68,9 +68,9 @@ const Personalia = ({
       <Text>Hobby's</Text>
       <View style={personaliaStyles.items}>
         {hobbies.map((hobby, i) => (
-          <View style={personaliaStyles.item}>
+          <View key={i} style={personaliaStyles.item}>
             {hobby.svg}
-            <Text key={i}>{hobby.name}</Text>
+            <Text>{hobby.name}</Text>
           </View>
         ))}
       </View>
