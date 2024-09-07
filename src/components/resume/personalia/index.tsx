@@ -7,6 +7,13 @@ type PersonaliaProps = {
 };
 
 const personaliaStyles = StyleSheet.create({
+  personalia: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+
+    height: '100%'
+  },
   title: {
     fontSize: '14pt',
     textTransform: 'uppercase'
@@ -19,9 +26,8 @@ const personaliaStyles = StyleSheet.create({
     flexDirection: 'column',
     gap: 8,
 
-    textTransform: 'uppercase',
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: '16pt',
     textAlign: 'center'
   },
   items: {
@@ -45,34 +51,38 @@ const Personalia = ({
   data: { firstName, lastName, jobTitle, hobbies, ...items }
 }: PersonaliaProps) => {
   return (
-    <View>
-      <Image
-        style={personaliaStyles.avatar}
-        src="male-avatar-placeholder.png"
-      />
-      <View style={personaliaStyles.top}>
-        <Text>
-          {firstName} {lastName}
-        </Text>
-        <Text>{jobTitle}</Text>
+    <View style={personaliaStyles.personalia}>
+      <View>
+        <Image
+          style={personaliaStyles.avatar}
+          src="male-avatar-placeholder.png"
+        />
+        <View style={{ ...personaliaStyles.title, ...personaliaStyles.top }}>
+          <Text>
+            {firstName} {lastName}
+          </Text>
+          <Text>{jobTitle}</Text>
+        </View>
       </View>
-      <Text style={personaliaStyles.title}>Contact</Text>
-      <View style={personaliaStyles.items}>
-        {Object.keys(items).map((itemKey, i) => (
-          <View key={i} style={personaliaStyles.item}>
-            {items[itemKey as keyof typeof items].svg}
-            <Text>{items[itemKey as keyof typeof items].name}</Text>
-          </View>
-        ))}
-      </View>
-      <Text>Hobby's</Text>
-      <View style={personaliaStyles.items}>
-        {hobbies.map((hobby, i) => (
-          <View key={i} style={personaliaStyles.item}>
-            {hobby.svg}
-            <Text>{hobby.name}</Text>
-          </View>
-        ))}
+      <View>
+        <Text style={personaliaStyles.title}>Contact</Text>
+        <View style={personaliaStyles.items}>
+          {Object.keys(items).map((itemKey, i) => (
+            <View key={i} style={personaliaStyles.item}>
+              {items[itemKey as keyof typeof items].svg}
+              <Text>{items[itemKey as keyof typeof items].name}</Text>
+            </View>
+          ))}
+        </View>
+        <Text style={personaliaStyles.title}>Hobby's</Text>
+        <View style={personaliaStyles.items}>
+          {hobbies.map((hobby, i) => (
+            <View key={i} style={personaliaStyles.item}>
+              {hobby.svg}
+              <Text>{hobby.name}</Text>
+            </View>
+          ))}
+        </View>
       </View>
     </View>
   );
