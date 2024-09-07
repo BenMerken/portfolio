@@ -19,12 +19,18 @@ type BioItem = {
 export type Bio = {
   firstName: string;
   lastName: string;
+  workExperience: {
+    svg: ReactNode
+    text: string
+  },
   dateOfBirth: {
+    svg: ReactNode,
     day: number;
     month: string;
     year: number;
   };
   residence: {
+    svg: ReactNode,
     address: string;
     zipCode: number;
     city: string;

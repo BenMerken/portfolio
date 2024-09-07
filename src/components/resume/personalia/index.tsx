@@ -33,9 +33,6 @@ const personaliaStyles = StyleSheet.create({
     fontSize: '16pt',
     textAlign: 'center'
   },
-  nameAndDateOfBirth: {
-    marginBottom: 24
-  },
   dateOfBirth: {
     textAlign: 'left',
     textTransform: 'lowercase',
@@ -81,6 +78,7 @@ const Personalia = ({
   data: {
     firstName,
     lastName,
+    workExperience,
     dateOfBirth,
     residence,
     jobTitle,
@@ -97,20 +95,37 @@ const Personalia = ({
           src="male-avatar-placeholder.png"
         />
         <View style={personaliaStyles.top}>
-          <View style={personaliaStyles.nameAndDateOfBirth}>
-            <Text style={{ ...personaliaStyles.title, margin: 0 }}>
-              {firstName} {lastName}
-            </Text>
-            <Text style={personaliaStyles.dateOfBirth}>
-              °{dateOfBirth.day} {dateOfBirth.month} {dateOfBirth.year}
-            </Text>
-          </View>
-          <Text style={{ ...personaliaStyles.title, letterSpacing: 0 }}>
+          <Text style={{ ...personaliaStyles.title, margin: 0 }}>
+            {firstName} {lastName}
+          </Text>
+          <Text style={{ ...personaliaStyles.title, letterSpacing: 2 }}>
             {jobTitle}
           </Text>
         </View>
       </View>
       <View>
+        <Text style={personaliaStyles.title}>Personalia</Text>
+        <View style={personaliaStyles.items}>
+          <View style={personaliaStyles.item}>
+            {dateOfBirth.svg}
+            <Text>
+              {dateOfBirth.day} {dateOfBirth.month} {dateOfBirth.year}
+            </Text>
+          </View>
+          <View style={personaliaStyles.item}>
+            {residence.svg}
+            <View>
+              <Text>{residence.address}</Text>
+              <Text>
+                {residence.zipCode} {residence.city}
+              </Text>
+            </View>
+          </View>
+          <View style={personaliaStyles.item}>
+            {workExperience.svg}
+            <Text>{workExperience.text}</Text>
+          </View>
+        </View>
         <Text style={personaliaStyles.title}>Contact</Text>
         <View style={personaliaStyles.items}>
           {Object.keys(items).map((itemKey, i) => (

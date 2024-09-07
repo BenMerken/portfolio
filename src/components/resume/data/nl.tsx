@@ -1,3 +1,4 @@
+import BabySVG from '@/components/resume/data/svg-components/baby';
 import BooksSVG from '@/components/resume/data/svg-components/books';
 import ColumnSVG from '@/components/resume/data/svg-components/colmn';
 import EmailSVG from '@/components/resume/data/svg-components/email';
@@ -5,6 +6,8 @@ import GithubSVG from '@/components/resume/data/svg-components/github.';
 import GlobeSVG from '@/components/resume/data/svg-components/globe';
 import GuitarSVG from '@/components/resume/data/svg-components/guitar';
 import PhoneSVG from '@/components/resume/data/svg-components/phone';
+import PinSVG from '@/components/resume/data/svg-components/pin';
+import SuitcaseSVG from '@/components/resume/data/svg-components/suitcase';
 import NetherlandsFlagSVG from '@/components/resume/data/svg-components/flags/nl';
 import GreatBritainFlagSVG from '@/components/resume/data/svg-components/flags/gb';
 import FranceFlagSVG from '@/components/resume/data/svg-components/flags/fr';
@@ -16,16 +19,22 @@ const data: Resume = {
     firstName: 'Ben',
     lastName: 'Merken',
     dateOfBirth: {
+      svg: <BabySVG />,
       day: 25,
       month: 'april',
       year: 1995
     },
+    workExperience: {
+      svg: <SuitcaseSVG />,
+      text: '3,5 jaar ervaring'
+    },
     residence: {
+      svg: <PinSVG />,
       address: 'Molenveld 13',
       zipCode: 3650,
       city: 'Dilsen-Stokkem'
     },
-    jobTitle: 'Fullstack webontwikkelaar',
+    jobTitle: 'Fullstack\nwebontwikkelaar',
     phone: {
       svg: <PhoneSVG />,
       name: '+32 489 43 21 30'
