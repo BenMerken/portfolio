@@ -31,8 +31,15 @@ const personaliaStyles = StyleSheet.create({
 
     fontWeight: 'bold',
     fontSize: '16pt',
-    textAlign: 'center',
-    letterSpacing: 0
+    textAlign: 'center'
+  },
+  nameAndDateOfBirth: {
+    marginBottom: 24
+  },
+  dateOfBirth: {
+    textAlign: 'left',
+    textTransform: 'lowercase',
+    fontSize: '14pt'
   },
   items: {
     display: 'flex',
@@ -50,11 +57,37 @@ const personaliaStyles = StyleSheet.create({
   contactImage: {
     width: 40,
     height: 40
+  },
+  language: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    gap: 8
+  },
+  languageProficiency: {
+    textAlign: 'right'
+  },
+  languageAndFlag: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+
+    textTransform: 'uppercase'
   }
 });
 
 const Personalia = ({
-  data: { firstName, lastName, jobTitle, hobbies, ...items }
+  data: {
+    firstName,
+    lastName,
+    dateOfBirth,
+    residence,
+    jobTitle,
+    hobbies,
+    languages,
+    ...items
+  }
 }: PersonaliaProps) => {
   return (
     <View style={personaliaStyles.personalia}>
@@ -63,11 +96,18 @@ const Personalia = ({
           style={personaliaStyles.avatar}
           src="male-avatar-placeholder.png"
         />
-        <View style={{ ...personaliaStyles.title, ...personaliaStyles.top }}>
-          <Text style={personaliaStyles.title}>
-            {firstName} {lastName}
+        <View style={personaliaStyles.top}>
+          <View style={personaliaStyles.nameAndDateOfBirth}>
+            <Text style={{ ...personaliaStyles.title, margin: 0 }}>
+              {firstName} {lastName}
+            </Text>
+            <Text style={personaliaStyles.dateOfBirth}>
+              °{dateOfBirth.day} {dateOfBirth.month} {dateOfBirth.year}
+            </Text>
+          </View>
+          <Text style={{ ...personaliaStyles.title, letterSpacing: 0 }}>
+            {jobTitle}
           </Text>
-          <Text>{jobTitle}</Text>
         </View>
       </View>
       <View>
@@ -77,6 +117,23 @@ const Personalia = ({
             <View key={i} style={personaliaStyles.item}>
               {items[itemKey as keyof typeof items].svg}
               <Text>{items[itemKey as keyof typeof items].name}</Text>
+            </View>
+          ))}
+        </View>
+        <Text style={personaliaStyles.title}>Talen</Text>
+        <View style={personaliaStyles.items}>
+          {languages.map((language, i) => (
+            <View
+              key={i}
+              style={{ ...personaliaStyles.item, ...personaliaStyles.language }}
+            >
+              <View style={personaliaStyles.languageAndFlag}>
+                {language.svg}
+                <Text>{language.name}:</Text>
+              </View>
+              <Text style={personaliaStyles.languageProficiency}>
+                {language.proficiency}
+              </Text>
             </View>
           ))}
         </View>

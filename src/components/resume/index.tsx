@@ -3,6 +3,7 @@ import {
   Page,
   PDFViewer,
   StyleSheet,
+  Text,
   View
 } from '@react-pdf/renderer';
 
@@ -22,20 +23,24 @@ const documentStyles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
 
+    maxWidth: '100vw',
+
     fontFamily: 'Helvetica',
     fontSize: '11pt'
   },
   left: {
-    minHeight: '100vh',
+    flex: 6,
 
+    minHeight: '100vh',
     padding: 24,
-    width: 240,
 
     backgroundColor: '#283135',
     color: '#FFFFFF'
   },
   right: {
-    padding: 30
+    flex: 10,
+
+    padding: 24
   }
 });
 
@@ -48,6 +53,10 @@ const Resume = ({ data }: ResumeProps) => {
             <Personalia data={data.bio} />
           </View>
           <View style={documentStyles.right}>
+            <View>
+              <Text>Samenvatting</Text>
+              <Text>{data.summary}</Text>
+            </View>
             <Education data={data.education} />
             <Experience data={data.experience} />
             <Skills data={data.skills} />

@@ -19,6 +19,16 @@ type BioItem = {
 export type Bio = {
   firstName: string;
   lastName: string;
+  dateOfBirth: {
+    day: number;
+    month: string;
+    year: number;
+  };
+  residence: {
+    address: string;
+    zipCode: number;
+    city: string;
+  };
   jobTitle: string;
   phone: BioItem;
   email: BioItem;
@@ -27,6 +37,11 @@ export type Bio = {
   hobbies: {
     name: string;
     svg: ReactNode;
+  }[];
+  languages: {
+    svg: ReactNode;
+    name: string;
+    proficiency: string;
   }[];
 };
 
@@ -60,6 +75,7 @@ export type Experience = {
 
 export type Resume = {
   bio: Bio;
+  summary: string;
   education: Education;
   certifications: Certifications;
   experience: Experience;
