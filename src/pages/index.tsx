@@ -6,7 +6,7 @@ const HomePage = () => {
       <h1>Ben Merken</h1>
       <p>Coming soon...</p>
 
-      <Link to="resume">To resume</Link>
+      <Link to="resume" target='_blank'>To resume</Link>
     </main>
   );
 };
