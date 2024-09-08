@@ -42,8 +42,23 @@ const sharedStyles = StyleSheet.create({
 
     marginBottom: 16
   },
+  rightSubtitle: {
+    fontFamily: 'Lato Bold',
+    fontSize: '12pt',
+
+    marginBottom: 8,
+    marginLeft: 8
+  },
+  rightSubtitle2: {
+    fontFamily: 'Lato Bold',
+    fontSize: '10pt',
+
+    textTransform: 'uppercase'
+  },
   section: {
-    marginBottom: 16
+    marginBottom: 16,
+
+    fontSize: '8pt'
   }
 });
 

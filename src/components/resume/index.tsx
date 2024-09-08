@@ -70,7 +70,8 @@ const documentStyles = StyleSheet.create({
     letterSpacing: 8
   },
   firstName: {
-    letterSpacing: 0
+    letterSpacing: 0,
+    color: colors.title
   },
   rightContent: {
     padding: 24,
@@ -119,7 +120,7 @@ const Resume = ({ data: { top, ...data } }: ResumeProps) => {
               <Text>{top.jobTitle}</Text>
             </View>
             <View style={documentStyles.rightContent}>
-              <View style={sharedStyles.section}>
+              <View style={{...sharedStyles.section, fontSize: 10}}>
                 <Text style={sharedStyles.rightTitle}>Profiel</Text>
                 <Text>{data.profile}</Text>
               </View>

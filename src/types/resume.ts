@@ -36,7 +36,7 @@ export type Personalia = {
   phone: BioItem;
   email: BioItem;
   website: BioItem;
-  linkedin: BioItem,
+  linkedin: BioItem;
   github: BioItem;
   hobbies: {
     name: string;
@@ -49,23 +49,27 @@ export type Personalia = {
   }[];
 };
 
-export type Education = {
+type Credentials = {
   institution: {
     name: string;
     location: string;
   };
-  degree: {
-    name: string;
-    department: string;
-  };
+  degreeName: string;
   period: Period;
+  additionalInfo?: string;
 }[];
 
 export type Certifications = {
   name: string;
   institution: string;
   date: string;
+  additionalInfo?: string
 }[];
+
+export type Education = {
+  credentials: Credentials;
+  certifications: Certifications;
+};
 
 export type Skills = {
   category: string;
@@ -86,7 +90,6 @@ export type Resume = {
   personalia: Personalia;
   profile: string;
   education: Education;
-  certifications: Certifications;
   experience: Experience;
   skills: Skills;
 };
