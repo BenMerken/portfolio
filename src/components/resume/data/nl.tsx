@@ -5,6 +5,7 @@ import EmailSVG from '@/components/resume/data/svg-components/email';
 import GithubSVG from '@/components/resume/data/svg-components/github.';
 import GlobeSVG from '@/components/resume/data/svg-components/globe';
 import GuitarSVG from '@/components/resume/data/svg-components/guitar';
+import LinkedinSVG from '@/components/resume/data/svg-components/linkedin';
 import PhoneSVG from '@/components/resume/data/svg-components/phone';
 import PinSVG from '@/components/resume/data/svg-components/pin';
 import SuitcaseSVG from '@/components/resume/data/svg-components/suitcase';
@@ -13,13 +14,12 @@ import GreatBritainFlagSVG from '@/components/resume/data/svg-components/flags/g
 import FranceFlagSVG from '@/components/resume/data/svg-components/flags/fr';
 import GermanyFlagSVG from '@/components/resume/data/svg-components/flags/de';
 import { Resume } from '@/types/resume';
-import LinkedinSVG from './svg-components/linkedin';
 
 const data: Resume = {
   top: {
     firstName: 'Ben',
     lastName: 'Merken',
-    jobTitle: 'Fullstack webontwikkelaar'
+    jobTitle: 'Full Stack webontwikkelaar'
   },
   personalia: {
     dateOfBirth: {
@@ -96,15 +96,15 @@ const data: Resume = {
           location: 'Hasselt'
         },
         degreeName:
-          'Professionele Bachelor in de Toegepaste Informatica: Applicatie-ontwikkeling',
+          'Professionele Bachelor in de Toegepaste\nInformatica: Applicatie-ontwikkeling',
         period: {
           start: {
             month: 'september',
-            year: '2017'
+            year: 2017
           },
           end: {
             month: 'februari',
-            year: '2021'
+            year: 2021
           }
         },
         additionalInfo: 'Met grote onderscheiding'
@@ -125,14 +125,89 @@ const data: Resume = {
       }
     ]
   },
-  experience: [],
+  experience: [
+    {
+      employer: 'AppFoundry NV',
+      jobTitle: 'Ontwikkelaar / consultant',
+      jobDescription:
+        'Ontwikkeling en onderhoud van TypeScript/JavaScript-applicaties, zowel in-house als voor AppFoundrys klanten, voornamelijk webapplicaties, ontwikkeld in React/Next.js, maar ook mobiele applicaties, ontwikkeld met React Native.',
+      highlightedProjects: [
+        {
+          client: 'FOD BOSA',
+          period: {
+            start: {
+              month: 'augustus',
+              year: 2022
+            }
+          },
+          description: ''
+        }
+      ],
+      otherProjects: [
+        'FOD BOSA',
+        'Cyclis Bike Lease',
+        'Elaut Group',
+        'be•at (Sportpaleis Group)',
+        'VAB',
+        'Selligent',
+        'SiteManager'
+      ],
+      period: {
+        start: {
+          month: 'maart',
+          year: 2021
+        }
+      }
+    },
+    {
+      employer: 'Alpine Digital',
+      jobTitle: 'Jobstudent webontwikkelaar',
+      jobDescription:
+        'Meewerken aan de analyse en de uitwerking van de website voor Belgian Cycling Factory.Meewerken aan de analyse en de uitwerking van de website voor Belgian Cycling Factory.',
+      period: {
+        start: {
+          month: 'augstus',
+          year: 2020
+        },
+        end: {
+          month: 'oktober',
+          year: 2021
+        }
+      }
+    }
+  ],
   skills: [
     {
-      category: 'Programmeren',
-      skills: ['TypeScript', 'React', 'Nextjs', 'Node.js']
+      category: 'Softwareontwikkeling',
+      skills: [
+        'TypeScript',
+        'JavaScript',
+        'React',
+        'Next.js',
+        'Node.js',
+        'HTML',
+        'CSS',
+        'Sass',
+        'React Native',
+        'SQL'
+      ]
     },
-    { category: 'Tools', skills: [] },
-    { category: 'Cloud', skills: ['Amazon Web Services', 'Microsoft Azure'] }
+    {
+      category: 'Tools',
+      skills: [
+        'Visual Studio Code',
+        'Vim',
+        'Git',
+        'ESLint',
+        'Confluence',
+        'Jira'
+      ]
+    },
+    {
+      category: 'Cloud',
+      skills: ['Amazon Web Services', 'Microsoft Azure', 'Vercel']
+    },
+    { category: 'Principes', skills: ['Agile', 'DevOps'] }
   ]
 };
 

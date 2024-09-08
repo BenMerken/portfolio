@@ -3,11 +3,11 @@ import { ReactNode } from 'react';
 type Period = {
   start: {
     month: string;
-    year: string;
+    year: number;
   };
   end?: {
     month: string;
-    year: string;
+    year: number;
   };
 };
 
@@ -63,7 +63,7 @@ export type Certifications = {
   name: string;
   institution: string;
   date: string;
-  additionalInfo?: string
+  additionalInfo?: string;
 }[];
 
 export type Education = {
@@ -78,6 +78,14 @@ export type Skills = {
 
 export type Experience = {
   employer: string;
+  jobTitle: string;
+  jobDescription: string;
+  highlightedProjects?: {
+    client: string;
+    period: Period;
+    description?: string;
+  }[];
+  otherProjects?: string[];
   period: Period;
 }[];
 

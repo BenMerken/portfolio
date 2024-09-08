@@ -37,10 +37,10 @@ const sharedStyles = StyleSheet.create({
     fontFamily: 'Lato Bold',
     fontSize: '14pt',
     textTransform: 'uppercase',
-    textDecoration: 'underline',
     color: colors.backgroundPrimary,
 
-    marginBottom: 16
+    marginBottom: 16,
+    borderBottom: `1px solid ${colors.backgroundSecondary}`
   },
   rightSubtitle: {
     fontFamily: 'Lato Bold',

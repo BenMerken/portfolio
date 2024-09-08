@@ -120,7 +120,7 @@ const Resume = ({ data: { top, ...data } }: ResumeProps) => {
               <Text>{top.jobTitle}</Text>
             </View>
             <View style={documentStyles.rightContent}>
-              <View style={{...sharedStyles.section, fontSize: 10}}>
+              <View style={sharedStyles.section}>
                 <Text style={sharedStyles.rightTitle}>Profiel</Text>
                 <Text>{data.profile}</Text>
               </View>
