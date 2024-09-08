@@ -19,7 +19,7 @@ const skillsStyles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
 
-    padding: 4,
+    padding: 2,
 
     border: `1px solid ${colors.backgroundPrimary}`,
     borderRadius: 8

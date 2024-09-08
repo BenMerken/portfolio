@@ -39,14 +39,14 @@ const sharedStyles = StyleSheet.create({
     textTransform: 'uppercase',
     color: colors.backgroundPrimary,
 
-    marginBottom: 16,
+    marginBottom: 8,
     borderBottom: `1px solid ${colors.backgroundSecondary}`
   },
   rightSubtitle: {
     fontFamily: 'Lato Bold',
     fontSize: '12pt',
 
-    marginBottom: 8,
+    marginBottom: 4,
     marginLeft: 8
   },
   rightSubtitle2: {
@@ -56,7 +56,7 @@ const sharedStyles = StyleSheet.create({
     textTransform: 'uppercase'
   },
   section: {
-    marginBottom: 16,
+    marginBottom: 8,
 
     fontSize: '8pt'
   }

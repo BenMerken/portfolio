@@ -9,13 +9,16 @@ type ExperienceProps = {
 
 const experienceStyles = StyleSheet.create({
   section: {
-    marginBottom: 8
+    marginBottom: 4
   },
   additionalInfo: {
     fontFamily: 'Lato Italic',
 
     marginBottom: 4,
     marginTop: 4
+  },
+  projects: {
+    marginLeft: 8
   }
 });
 

@@ -87,7 +87,7 @@ const data: Resume = {
     ]
   },
   profile:
-    'Met 3,5 jaar ervaring als full-stack webontwikkelaar en consultant heb ik een brede expertise opgebouwd in zowel front-end als back-end ontwikkeling, evenals het adviseren van klanten over technische oplossingen.\n\nNa deze toegewijde jaren in software consultancy ben ik nu op zoek naar een nieuwe uitdaging in in-house productontwikkeling, waar ik mijn technische kennis kan inzetten om te werken aan langetermijnprojecten en de kwaliteit van een product verder kan optimaliseren. Daarnaast ben ik gemotiveerd om me verder te ontwikkelen en sta ik open om aanvullende training te volgen in quality assurance en netwerkbeheer om mijn vaardigheden uit te breiden en een breder scala aan technische verantwoordelijkheden op me te nemen.',
+    'Met 3,5 jaar ervaring als full-stack webontwikkelaar en consultant heb ik een brede expertise opgebouwd in zowel front-end als back-end ontwikkeling, evenals het adviseren van klanten over technische oplossingen.\nNa deze toegewijde jaren in software consultancy ben ik nu op zoek naar een nieuwe uitdaging in in-house productontwikkeling, waar ik mijn technische kennis kan inzetten om te werken aan langetermijnprojecten en de kwaliteit van een product verder kan optimaliseren. Daarnaast ben ik gemotiveerd om me verder te ontwikkelen en sta ik open om aanvullende training te volgen in quality assurance en netwerkbeheer om mijn vaardigheden uit te breiden en een breder scala aan technische verantwoordelijkheden op me te nemen.',
   education: {
     credentials: [
       {
@@ -189,7 +189,9 @@ const data: Resume = {
         'CSS',
         'Sass',
         'React Native',
-        'SQL'
+        'SQL',
+        'Agile',
+        'DevOps'
       ]
     },
     {
@@ -206,8 +208,7 @@ const data: Resume = {
     {
       category: 'Cloud',
       skills: ['Amazon Web Services', 'Microsoft Azure', 'Vercel']
-    },
-    { category: 'Principes', skills: ['Agile', 'DevOps'] }
+    }
   ]
 };
 

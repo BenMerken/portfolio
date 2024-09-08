@@ -33,13 +33,13 @@ const documentStyles = StyleSheet.create({
 
     fontFamily: 'Lato',
     fontSize: '10pt',
-    lineHeight: '1.2pt',
+    lineHeight: '1.2pt'
   },
   left: {
     flex: 6,
 
     minHeight: '100vh',
-    padding: 24,
+    padding: 20,
 
     backgroundColor: colors.backgroundPrimary,
     color: '#FFFFFF'
@@ -52,8 +52,8 @@ const documentStyles = StyleSheet.create({
     flexDirection: 'column',
     gap: 8,
 
-    padding: 24,
-    paddingBottom: 16,
+    padding: 20,
+    paddingBottom: 0,
 
     fontFamily: 'Lato Bold',
     textTransform: 'uppercase',
@@ -74,12 +74,12 @@ const documentStyles = StyleSheet.create({
     color: colors.title
   },
   rightContent: {
-    padding: 24,
+    padding: 20,
     textAlign: 'justify'
   },
   backgroundTop: {
     position: 'absolute',
-    top: 0,
+    top: -16,
     left: 0,
     right: 0
   },
