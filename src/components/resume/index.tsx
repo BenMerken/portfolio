@@ -31,8 +31,9 @@ const documentStyles = StyleSheet.create({
 
     maxWidth: '100vw',
 
-    fontFamily: 'Helvetica',
-    fontSize: '11pt'
+    fontFamily: 'Lato',
+    fontSize: '10pt',
+    lineHeight: '1.2pt',
   },
   left: {
     flex: 6,
@@ -54,28 +55,26 @@ const documentStyles = StyleSheet.create({
     padding: 24,
     paddingBottom: 16,
 
-    fontWeight: 'bold',
+    fontFamily: 'Lato Bold',
+    textTransform: 'uppercase',
     fontSize: '16pt',
-    textAlign: 'center'
+    textAlign: 'center',
+    color: colors.backgroundPrimary
   },
   name: {
     display: 'flex',
     flexDirection: 'row',
     gap: 8,
 
-    textTransform: 'uppercase',
     fontSize: '24pt',
     letterSpacing: 8
   },
   firstName: {
-    fontWeight: 'bold',
     letterSpacing: 0
   },
-  jobTitle: {
-    textTransform: 'uppercase'
-  },
   rightContent: {
-    padding: 24
+    padding: 24,
+    textAlign: 'justify'
   },
   backgroundTop: {
     position: 'absolute',
@@ -117,12 +116,12 @@ const Resume = ({ data: { top, ...data } }: ResumeProps) => {
                 <Text style={documentStyles.firstName}>{top.firstName}</Text>
                 <Text>{top.lastName}</Text>
               </View>
-              <Text style={documentStyles.jobTitle}>{top.jobTitle}</Text>
+              <Text>{top.jobTitle}</Text>
             </View>
             <View style={documentStyles.rightContent}>
               <View style={sharedStyles.section}>
-                <Text style={sharedStyles.rightTitle}>Samenvatting</Text>
-                <Text>{data.summary}</Text>
+                <Text style={sharedStyles.rightTitle}>Profiel</Text>
+                <Text>{data.profile}</Text>
               </View>
               <Education data={data.education} />
               <Experience data={data.experience} />

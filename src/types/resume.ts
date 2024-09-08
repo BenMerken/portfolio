@@ -36,6 +36,7 @@ export type Personalia = {
   phone: BioItem;
   email: BioItem;
   website: BioItem;
+  linkedin: BioItem,
   github: BioItem;
   hobbies: {
     name: string;
@@ -83,7 +84,7 @@ export type Resume = {
     jobTitle: string;
   };
   personalia: Personalia;
-  summary: string;
+  profile: string;
   education: Education;
   certifications: Certifications;
   experience: Experience;

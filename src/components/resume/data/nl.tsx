@@ -13,12 +13,13 @@ import GreatBritainFlagSVG from '@/components/resume/data/svg-components/flags/g
 import FranceFlagSVG from '@/components/resume/data/svg-components/flags/fr';
 import GermanyFlagSVG from '@/components/resume/data/svg-components/flags/de';
 import { Resume } from '@/types/resume';
+import LinkedinSVG from './svg-components/linkedin';
 
 const data: Resume = {
   top: {
     firstName: 'Ben',
     lastName: 'Merken',
-    jobTitle: 'Fullstack\nwebontwikkelaar'
+    jobTitle: 'Fullstack webontwikkelaar'
   },
   personalia: {
     dateOfBirth: {
@@ -48,6 +49,10 @@ const data: Resume = {
     website: {
       svg: <GlobeSVG />,
       name: 'https://www.benmerken.com/'
+    },
+    linkedin: {
+      svg: <LinkedinSVG />,
+      name: 'https://www.linkedin.com/in/benmerken/'
     },
     github: {
       svg: <GithubSVG />,
@@ -81,8 +86,8 @@ const data: Resume = {
       { svg: <BooksSVG />, name: 'Lezen' }
     ]
   },
-  summary:
-    'Met 3,5 jaar ervaring als fullstack webontwikkelaar en consultant in de IT-sector op zak wens ik op zoek te gaan naar een nieuwe, verfrissende werkomgeving.',
+  profile:
+    'Met 3,5 jaar ervaring als full-stack webontwikkelaar en consultant heb ik een brede expertise opgebouwd in zowel front-end als back-end ontwikkeling, evenals het adviseren van klanten over technische oplossingen.\n\nNa deze toegewijde jaren in software consultancy ben ik nu op zoek naar een nieuwe uitdaging in in-house productontwikkeling, waar ik mijn technische kennis kan inzetten om te werken aan langetermijnprojecten en de kwaliteit van een product verder kan optimaliseren. Daarnaast ben ik gemotiveerd om me verder te ontwikkelen en sta ik open om aanvullende training te volgen in quality assurance en netwerkbeheer om mijn vaardigheden uit te breiden en een breder scala aan technische verantwoordelijkheden op me te nemen.',
   education: [
     {
       institution: {

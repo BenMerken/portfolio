@@ -1,4 +1,17 @@
-import { StyleSheet } from '@react-pdf/renderer';
+import { Font, StyleSheet } from '@react-pdf/renderer';
+
+Font.register({
+  family: 'Lato',
+  src: `https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf`
+});
+Font.register({
+  family: 'Lato Italic',
+  src: `https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf`
+});
+Font.register({
+  family: 'Lato Bold',
+  src: `https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf`
+});
 
 export const colors = {
   title: '#3CE3B4',
@@ -11,6 +24,7 @@ export const colors = {
 
 const sharedStyles = StyleSheet.create({
   leftTitle: {
+    fontFamily: 'Lato Bold',
     fontSize: '14pt',
     textTransform: 'uppercase',
     textDecoration: 'underline',
@@ -19,7 +33,15 @@ const sharedStyles = StyleSheet.create({
 
     marginBottom: 16
   },
-  rightTitle: {},
+  rightTitle: {
+    fontFamily: 'Lato Bold',
+    fontSize: '14pt',
+    textTransform: 'uppercase',
+    textDecoration: 'underline',
+    color: colors.backgroundPrimary,
+
+    marginBottom: 16
+  },
   section: {
     marginBottom: 16
   }
