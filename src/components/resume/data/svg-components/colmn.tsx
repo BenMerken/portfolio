@@ -3,7 +3,7 @@ import { Circle, G, Path, Rect, Svg } from '@react-pdf/renderer';
 const ColumnSVG = () => {
   return (
     <Svg
-      fill="#000000"
+      fill="#FFFFFF"
       width="16"
       height="16"
       id="Layer_1"

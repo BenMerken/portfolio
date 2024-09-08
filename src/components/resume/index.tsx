@@ -13,6 +13,7 @@ import Personalia from '@/components/resume/personalia';
 import classes from '@/components/resume/resume.module.scss';
 import Skills from '@/components/resume/skills';
 import { Resume as ResumeData } from '@/types/resume';
+import { colors } from './_shared/styles';
 
 type ResumeProps = {
   data: ResumeData;
@@ -34,13 +35,13 @@ const documentStyles = StyleSheet.create({
     minHeight: '100vh',
     padding: 24,
 
-    backgroundColor: '#283135',
+    backgroundColor: colors.backgroundPrimary,
     color: '#FFFFFF'
   },
   right: {
     flex: 10,
 
-    padding: 24
+    padding: 24,
   }
 });
 

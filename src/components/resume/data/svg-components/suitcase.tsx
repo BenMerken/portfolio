@@ -2,7 +2,7 @@ import { G, Path, Svg } from '@react-pdf/renderer';
 
 const SuitcaseSVG = () => {
   return (
-    <Svg fill='#000000' height="16" width="16" viewBox="0 0 255.288 255.288">
+    <Svg fill='#FFFFFF' height="16" width="16" viewBox="0 0 255.288 255.288">
       <G>
         <Path
           d="M234.424,39.955h-70.071V28.142c0-11.498-9.361-20.853-20.853-20.853h-31.721
