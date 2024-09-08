@@ -9,7 +9,7 @@ const HomePage = () => {
       <p>🚧 Under construction 👷</p>
       <p>
         Welcome to the personal portfolio of Ben Merken! As you can see, it's
-        still quite empty! 😅 Be sure to check back later!
+        still quite empty! 😅 Be sure to check back later! 👋
       </p>
       <Link to="resume" target="_blank">
         To resume
