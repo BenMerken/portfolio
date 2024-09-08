@@ -16,6 +16,7 @@ import Skills from '@/components/resume/skills';
 import sharedStyles, { colors } from '@/components/resume/_shared/styles';
 import { Resume as ResumeData } from '@/types/resume';
 import TopRightBackgroundSVG from './data/svg-components/backgrounds/top-right';
+import BackgroundTopSVG from './data/svg-components/backgrounds/top';
 
 type ResumeProps = {
   data: ResumeData;
@@ -23,6 +24,8 @@ type ResumeProps = {
 
 const documentStyles = StyleSheet.create({
   page: {
+    position: 'relative',
+
     display: 'flex',
     flexDirection: 'row',
 
@@ -49,13 +52,11 @@ const documentStyles = StyleSheet.create({
     gap: 8,
 
     padding: 24,
-    paddingBottom: 0,
+    paddingBottom: 16,
 
     fontWeight: 'bold',
     fontSize: '16pt',
-    textAlign: 'center',
-
-    backgroundColor: colors.backgroundSecondary
+    textAlign: 'center'
   },
   name: {
     display: 'flex',
@@ -70,13 +71,21 @@ const documentStyles = StyleSheet.create({
     fontWeight: 'bold',
     letterSpacing: 0
   },
-  jobTitle: {},
+  jobTitle: {
+    textTransform: 'uppercase'
+  },
   rightContent: {
     padding: 24
   },
-  backgroundTopRight: {
+  backgroundTop: {
     position: 'absolute',
     top: 0,
+    left: 0,
+    right: 0
+  },
+  backgroundTopRight: {
+    position: 'absolute',
+    top: 512,
     right: 0,
     zIndex: 999
   },
@@ -93,6 +102,9 @@ const Resume = ({ data: { top, ...data } }: ResumeProps) => {
     <PDFViewer className={classes.pdfViewer}>
       <Document author="Ben Merken" title="CV Ben Merken">
         <Page size="A4" orientation="portrait" style={documentStyles.page}>
+          <View style={documentStyles.backgroundTop}>
+            <BackgroundTopSVG />
+          </View>
           <View style={documentStyles.backgroundTopRight}>
             <TopRightBackgroundSVG />
           </View>
@@ -109,7 +121,7 @@ const Resume = ({ data: { top, ...data } }: ResumeProps) => {
             </View>
             <View style={documentStyles.rightContent}>
               <View style={sharedStyles.section}>
-                <Text>Samenvatting</Text>
+                <Text style={sharedStyles.rightTitle}>Samenvatting</Text>
                 <Text>{data.summary}</Text>
               </View>
               <Education data={data.education} />

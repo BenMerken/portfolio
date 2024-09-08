@@ -10,7 +10,7 @@ export type EducationProps = {
 const Education = ({ data }: EducationProps) => {
   return (
     <View style={sharedStyles.section}>
-      <Text>Education</Text>
+      <Text style={sharedStyles.rightTitle}>Opleiding</Text>
       {data.map((edu, i) => (
         <View key={i}>
           <Text>{edu.institution.name}</Text>
