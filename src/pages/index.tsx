@@ -4,7 +4,7 @@ import '@/App.css'
 
 const HomePage = () => {
   return (
-    <main>
+    <main id="main">
       <h1>Ben Merken</h1>
       <p>🚧 Under construction 👷</p>
       <p>
