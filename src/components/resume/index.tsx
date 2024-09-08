@@ -7,6 +7,7 @@ import {
   View
 } from '@react-pdf/renderer';
 
+import BottomBackgroundSVG from '@/components/resume/data/svg-components/backgrounds/bottom';
 import Education from '@/components/resume/education';
 import Experience from '@/components/resume/experience';
 import Personalia from '@/components/resume/personalia';
@@ -14,6 +15,7 @@ import classes from '@/components/resume/resume.module.scss';
 import Skills from '@/components/resume/skills';
 import sharedStyles, { colors } from '@/components/resume/_shared/styles';
 import { Resume as ResumeData } from '@/types/resume';
+import TopRightBackgroundSVG from './data/svg-components/backgrounds/top-right';
 
 type ResumeProps = {
   data: ResumeData;
@@ -39,18 +41,21 @@ const documentStyles = StyleSheet.create({
     color: '#FFFFFF'
   },
   right: {
-    flex: 10,
-
-    padding: 24
+    flex: 10
   },
   top: {
     display: 'flex',
     flexDirection: 'column',
     gap: 8,
 
+    padding: 24,
+    paddingBottom: 0,
+
     fontWeight: 'bold',
     fontSize: '16pt',
-    textAlign: 'center'
+    textAlign: 'center',
+
+    backgroundColor: colors.backgroundSecondary
   },
   name: {
     display: 'flex',
@@ -65,7 +70,22 @@ const documentStyles = StyleSheet.create({
     fontWeight: 'bold',
     letterSpacing: 0
   },
-  jobTitle: {}
+  jobTitle: {},
+  rightContent: {
+    padding: 24
+  },
+  backgroundTopRight: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    zIndex: 999
+  },
+  backgroundBottom: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0
+  }
 });
 
 const Resume = ({ data: { top, ...data } }: ResumeProps) => {
@@ -73,6 +93,9 @@ const Resume = ({ data: { top, ...data } }: ResumeProps) => {
     <PDFViewer className={classes.pdfViewer}>
       <Document author="Ben Merken" title="CV Ben Merken">
         <Page size="A4" orientation="portrait" style={documentStyles.page}>
+          <View style={documentStyles.backgroundTopRight}>
+            <TopRightBackgroundSVG />
+          </View>
           <View style={documentStyles.left}>
             <Personalia data={data.personalia} />
           </View>
@@ -84,13 +107,18 @@ const Resume = ({ data: { top, ...data } }: ResumeProps) => {
               </View>
               <Text style={documentStyles.jobTitle}>{top.jobTitle}</Text>
             </View>
-            <View style={sharedStyles.section}>
-              <Text>Samenvatting</Text>
-              <Text>{data.summary}</Text>
+            <View style={documentStyles.rightContent}>
+              <View style={sharedStyles.section}>
+                <Text>Samenvatting</Text>
+                <Text>{data.summary}</Text>
+              </View>
+              <Education data={data.education} />
+              <Experience data={data.experience} />
+              <Skills data={data.skills} />
             </View>
-            <Education data={data.education} />
-            <Experience data={data.experience} />
-            <Skills data={data.skills} />
+          </View>
+          <View style={documentStyles.backgroundBottom}>
+            <BottomBackgroundSVG />
           </View>
         </Page>
       </Document>
