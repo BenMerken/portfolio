@@ -1,31 +1,21 @@
 import { Image, StyleSheet, Text, View } from '@react-pdf/renderer';
 
 import sharedStyles from '@/components/resume/_shared/styles';
-import { Bio } from '@/types/resume';
+import { Personalia as PersonaliaData } from '@/types/resume';
 
 type PersonaliaProps = {
-  data: Bio;
+  data: PersonaliaData;
 };
 
 const personaliaStyles = StyleSheet.create({
   personalia: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between',
 
     height: '100%'
   },
   avatar: {
     marginBottom: 16
-  },
-  top: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 8,
-
-    fontWeight: 'bold',
-    fontSize: '16pt',
-    textAlign: 'center'
   },
   dateOfBirth: {
     textAlign: 'left',
@@ -69,36 +59,16 @@ const personaliaStyles = StyleSheet.create({
 });
 
 const Personalia = ({
-  data: {
-    firstName,
-    lastName,
-    workExperience,
-    dateOfBirth,
-    residence,
-    jobTitle,
-    hobbies,
-    languages,
-    ...items
-  }
+  data: { workExperience, dateOfBirth, residence, hobbies, languages, ...items }
 }: PersonaliaProps) => {
   return (
     <View style={personaliaStyles.personalia}>
+      <Image
+        style={personaliaStyles.avatar}
+        src="male-avatar-placeholder.png"
+      />
       <View>
-        <Image
-          style={personaliaStyles.avatar}
-          src="male-avatar-placeholder.png"
-        />
-        <View style={personaliaStyles.top}>
-          <Text style={{ ...sharedStyles.title, margin: 0 }}>
-            {firstName} {lastName}
-          </Text>
-          <Text style={{ ...sharedStyles.title, letterSpacing: 2 }}>
-            {jobTitle}
-          </Text>
-        </View>
-      </View>
-      <View>
-        <Text style={sharedStyles.title}>Personalia</Text>
+        <Text style={sharedStyles.leftTitle}>Personalia</Text>
         <View style={personaliaStyles.items}>
           <View style={personaliaStyles.item}>
             {dateOfBirth.svg}
@@ -120,7 +90,7 @@ const Personalia = ({
             <Text>{workExperience.text}</Text>
           </View>
         </View>
-        <Text style={sharedStyles.title}>Contact</Text>
+        <Text style={sharedStyles.leftTitle}>Contact</Text>
         <View style={personaliaStyles.items}>
           {Object.keys(items).map((itemKey, i) => (
             <View key={i} style={personaliaStyles.item}>
@@ -129,7 +99,7 @@ const Personalia = ({
             </View>
           ))}
         </View>
-        <Text style={sharedStyles.title}>Talen</Text>
+        <Text style={sharedStyles.leftTitle}>Talen</Text>
         <View style={personaliaStyles.items}>
           {languages.map((language, i) => (
             <View
@@ -146,7 +116,7 @@ const Personalia = ({
             </View>
           ))}
         </View>
-        <Text style={sharedStyles.title}>Hobby's</Text>
+        <Text style={sharedStyles.leftTitle}>Hobby's</Text>
         <View style={personaliaStyles.items}>
           {hobbies.map((hobby, i) => (
             <View key={i} style={personaliaStyles.item}>

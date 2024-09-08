@@ -15,9 +15,12 @@ import GermanyFlagSVG from '@/components/resume/data/svg-components/flags/de';
 import { Resume } from '@/types/resume';
 
 const data: Resume = {
-  bio: {
+  top: {
     firstName: 'Ben',
     lastName: 'Merken',
+    jobTitle: 'Fullstack\nwebontwikkelaar'
+  },
+  personalia: {
     dateOfBirth: {
       svg: <BabySVG />,
       day: 25,
@@ -34,7 +37,6 @@ const data: Resume = {
       zipCode: 3650,
       city: 'Dilsen-Stokkem'
     },
-    jobTitle: 'Fullstack\nwebontwikkelaar',
     phone: {
       svg: <PhoneSVG />,
       name: '+32 489 43 21 30'

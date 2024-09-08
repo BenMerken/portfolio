@@ -10,12 +10,17 @@ export const colors = {
 };
 
 const sharedStyles = StyleSheet.create({
-  title: {
+  leftTitle: {
     fontSize: '14pt',
     textTransform: 'uppercase',
+    textDecoration: 'underline',
     letterSpacing: 8,
     color: colors.title,
 
+    marginBottom: 16
+  },
+  rightTitle: {},
+  section: {
     marginBottom: 16
   }
 });

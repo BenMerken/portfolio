@@ -1,5 +1,6 @@
 import { Text, View } from '@react-pdf/renderer';
 
+import sharedStyles from '@/components/resume/_shared/styles';
 import { Experience as ResumeExperience } from '@/types/resume';
 
 type ExperienceProps = {
@@ -8,7 +9,7 @@ type ExperienceProps = {
 
 const Experience = ({ data }: ExperienceProps) => {
   return (
-    <View>
+    <View style={sharedStyles.section}>
       {data.map((exp, i) => (
         <View key={i}>
           <Text>{exp.employer}</Text>

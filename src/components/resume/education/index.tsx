@@ -1,5 +1,6 @@
 import { Text, View } from '@react-pdf/renderer';
 
+import sharedStyles from '@/components/resume/_shared/styles';
 import { Education as ResumeEducation } from '@/types/resume';
 
 export type EducationProps = {
@@ -8,7 +9,7 @@ export type EducationProps = {
 
 const Education = ({ data }: EducationProps) => {
   return (
-    <View>
+    <View style={sharedStyles.section}>
       <Text>Education</Text>
       {data.map((edu, i) => (
         <View key={i}>
