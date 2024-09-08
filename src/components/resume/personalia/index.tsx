@@ -15,7 +15,10 @@ const personaliaStyles = StyleSheet.create({
     height: '100%'
   },
   avatar: {
-    marginBottom: 16
+    marginBottom: 16,
+
+    borderRadius: '50%',
+    border: '4px solid #000000'
   },
   dateOfBirth: {
     textAlign: 'left',
@@ -65,7 +68,7 @@ const Personalia = ({
     <View style={personaliaStyles.personalia}>
       <Image
         style={personaliaStyles.avatar}
-        src="male-avatar-placeholder.png"
+        src="profile.jpg"
       />
       <View>
         <Text style={sharedStyles.leftTitle}>Personalia</Text>
