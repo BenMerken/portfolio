@@ -4,6 +4,7 @@ import { initReactI18next } from 'react-i18next';
 import portfolioEN from '@/i18n/locales/en-GB/portfolio.json';
 import portfolioNL from '@/i18n/locales/nl-BE/portfolio.json';
 import resumeEN from '@/i18n/locales/en-GB/resume.json';
+import resumeNL from '@/i18n/locales/nl-BE/resume.json';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -12,7 +13,8 @@ i18n.use(initReactI18next).init({
       resume: resumeEN
     },
     'nl-BE': {
-      portfolio: portfolioNL
+      portfolio: portfolioNL,
+      resume: resumeNL
     }
   },
   lng: 'en-GB',

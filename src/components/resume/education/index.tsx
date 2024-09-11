@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { useTranslation } from 'react-i18next';
 
 import sharedStyles from '@/components/resume/_shared/styles';
 import { Education as ResumeEducation } from '@/types/resume';
-import { useTranslation } from 'react-i18next';
 
 export type EducationProps = {
   data: ResumeEducation;

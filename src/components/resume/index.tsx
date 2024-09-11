@@ -6,6 +6,7 @@ import {
   Text,
   View
 } from '@react-pdf/renderer';
+import { useTranslation } from 'react-i18next';
 
 import BottomBackgroundSVG from '@/components/resume/data/svg-components/backgrounds/bottom';
 import Education from '@/components/resume/education';
@@ -17,7 +18,6 @@ import sharedStyles, { colors } from '@/components/resume/_shared/styles';
 import { Resume as ResumeData } from '@/types/resume';
 import TopRightBackgroundSVG from './data/svg-components/backgrounds/top-right';
 import BackgroundTopSVG from './data/svg-components/backgrounds/top';
-import { useTranslation } from 'react-i18next';
 
 type ResumeProps = {
   data: ResumeData;

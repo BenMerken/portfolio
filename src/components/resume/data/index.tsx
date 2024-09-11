@@ -111,19 +111,19 @@ const data: Resume = {
   experience: [
     {
       employer: 'AppFoundry NV',
-      jobTitle: 'Ontwikkelaar / consultant',
+      jobTitle: 'experience.appFoundry.jobTitle',
       jobDescription:
-        'Ontwikkeling en onderhoud van TypeScript/JavaScript-applicaties, zowel in-house als voor AppFoundrys klanten, voornamelijk webapplicaties, ontwikkeld in React/Next.js, maar ook mobiele applicaties, ontwikkeld met React Native.',
+        'experience.appFoundry.description',
       highlightedProjects: [
         {
           client: 'FOD BOSA',
           period: {
             start: {
-              month: 'augustus',
+              month: 'months.august',
               year: 2022
             }
           },
-          description: ''
+          description: 'experience.appFoundry.description'
         }
       ],
       otherProjects: [
@@ -137,23 +137,23 @@ const data: Resume = {
       ],
       period: {
         start: {
-          month: 'maart',
+          month: 'months.march',
           year: 2021
         }
       }
     },
     {
       employer: 'Alpine Digital',
-      jobTitle: 'Jobstudent webontwikkelaar',
+      jobTitle: 'experience.alpine.jobTitle',
       jobDescription:
-        'Meewerken aan de analyse en de uitwerking van de website voor Belgian Cycling Factory.Meewerken aan de analyse en de uitwerking van de website voor Belgian Cycling Factory.',
+        'experience.alpine.description',
       period: {
         start: {
-          month: 'augstus',
+          month: 'months.august',
           year: 2020
         },
         end: {
-          month: 'oktober',
+          month: 'months.october',
           year: 2020
         }
       }

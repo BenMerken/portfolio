@@ -1,3 +1,70 @@
 {
-    
+  "top": {
+    "jobTitle": "Full stack webontwikkelaar"
+  },
+  "profile": {
+    "title": "Profile",
+    "text": "With 3.5 years of experience as a full-stack web developer and consultant, I have developed extensive expertise in both front-end and back-end development, as well as advising clients on technical solutions.\nAfter these years in consultancy, I am now looking for a new challenge in in-house product development, where I can apply my technical knowledge to work on long-term projects and further optimize the quality of a product. Additionally, I am motivated to continue developing myself and am open to taking up additional training in network management to broaden my skills and take on a wider range of technical responsibilities."
+  },
+  "personalia": {
+    "title": "Personalia",
+    "workExperience": "3.5 years work experience",
+    "dateOfBirth": {
+      "month": "April"
+    },
+    "hobbies": {
+      "title": "Hobbies",
+      "guitar": "Classical guitar",
+      "history": "(Ancient) History",
+      "reading": "Reading"
+    },
+    "languages": {
+      "title": "Languages",
+      "dutch": "Native speaker",
+      "english": "Professional proficiency",
+      "french": "Reading: good; speaking: poor",
+      "german": "Reading: good; speaking: poor"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "appFoundry": {
+      "jobTitle": "Developer / Consultant",
+      "description": "Development and maintenance of TypeScript/Javascript based applications, both in-house and for AppFoundry's clients, primarily web applications, developed in React/Next.js, but also mobile apps, developed in React Native.",
+      "clients": "My current and former clients:"
+    },
+    "alpine": {
+      "jobTitle": "Job Student Web Developer",
+      "description": "Participate in the analysis and implementation of Belgian Cycling Factory's store front website."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "credentials": {
+      "title": "Credentials",
+      "pxl": {
+        "degree": "Professional Bachelor in Information Technology:\nApplication Development",
+        "additionalInfo": "With great distinction"
+      }
+    },
+    "certificates": {
+      "title": "Certificates",
+      "aws": {
+        "additionalinfo": "Reference number 6P2444WDENBQQB9Y"
+      },
+      "azure": {
+        "additionalinfo": "reference number i435-4011"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "months": {
+    "february": "February",
+    "march": "March",
+    "august": "August",
+    "september": "September",
+    "october": "October"
+  }
 }

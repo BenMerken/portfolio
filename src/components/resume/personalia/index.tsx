@@ -1,11 +1,11 @@
 import { Image, StyleSheet, Text, View } from '@react-pdf/renderer';
+import { useTranslation } from 'react-i18next';
 
 import sharedStyles from '@/components/resume/_shared/styles';
 import BabySVG from '@/components/resume/data/svg-components/baby';
 import PinSVG from '@/components/resume/data/svg-components/pin';
 import SuitcaseSVG from '@/components/resume/data/svg-components/suitcase';
 import { Personalia as PersonaliaData } from '@/types/resume';
-import { useTranslation } from 'react-i18next';
 
 type PersonaliaProps = {
   data: PersonaliaData;

@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { useTranslation } from 'react-i18next';
 
 import sharedStyles from '@/components/resume/_shared/styles';
 import { Experience as ResumeExperience } from '@/types/resume';
@@ -23,30 +24,35 @@ const experienceStyles = StyleSheet.create({
 });
 
 const Experience = ({ data }: ExperienceProps) => {
+  const { t } = useTranslation('resume');
+
   return (
     <View style={sharedStyles.section}>
-      <Text style={sharedStyles.rightTitle}>Ervaring</Text>
+      <Text style={sharedStyles.rightTitle}>{t('experience.title')}</Text>
       {data.map((exp, i) => (
         <View key={i} style={experienceStyles.section}>
-          <Text style={sharedStyles.rightSubtitle2}>{exp.jobTitle}</Text>
+          <Text style={sharedStyles.rightSubtitle2}>{t(exp.jobTitle)}</Text>
           <Text>
-            {exp.employer} | {exp.period.start.month} {exp.period.start.year} -{' '}
+            {exp.employer} | {t(exp.period.start.month)} {exp.period.start.year}{' '}
+            -{' '}
             {exp.period.end
-              ? `${exp.period.end.month} ${exp.period.end.year}`
+              ? `${t(exp.period.end.month)} ${exp.period.end.year}`
               : ''}
           </Text>
           -
           {exp.period.end && (
             <Text>
-              {exp.period.end.month} {exp.period.end.year}
+              {t(exp.period.end.month)} {exp.period.end.year}
             </Text>
           )}
           <Text style={experienceStyles.additionalInfo}>
-            {exp.jobDescription}
+            {t(exp.jobDescription)}
           </Text>
           {exp.highlightedProjects && (
             <View>
-              <Text style={sharedStyles.rightSubtitle}>Mijn huidige en voormalige klanten:</Text>
+              <Text style={sharedStyles.rightSubtitle}>
+                {t('experience.appFoundry.clients')}
+              </Text>
               <View style={experienceStyles.projects}>
                 {exp.otherProjects?.map((project, i) => (
                   <Text key={i}>• {project}</Text>
