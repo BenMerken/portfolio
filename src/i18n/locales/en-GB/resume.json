@@ -27,13 +27,44 @@
     }
   },
   "experience": {
-    "title": "Experience"
+    "title": "Experience",
+    "appFoundry": {
+      "jobTitle": "Developer / Consultant",
+      "description": "Development and maintenance of TypeScript/Javascript based applications, both in-house and for AppFoundry's clients, primarily web applications, developed in React/Next.js, but also mobile apps, developed in React Native.",
+      "clients": "My current and former clients:"
+    },
+    "alpine": {
+      "jobTitle": "Job Student Web Developer",
+      "description": "Participate in the analysis and implementation of Belgian Cycling Factory's store front website."
+    }
   },
   "education": {
     "title": "Education",
-    "credentials": {}
+    "credentials": {
+      "title": "Credentials",
+      "pxl": {
+        "degree": "Professional Bachelor in Information Technology:\nApplication Development",
+        "additionalInfo": "With great distinction"
+      }
+    },
+    "certificates": {
+      "title": "Certificates",
+      "aws": {
+        "additionalinfo": "Reference number 6P2444WDENBQQB9Y"
+      },
+      "azure": {
+        "additionalinfo": "reference number i435-4011"
+      }
+    }
   },
   "skills": {
     "title": "Skills"
+  },
+  "months": {
+    "february": "February",
+    "march": "March",
+    "august": "August",
+    "september": "September",
+    "october": "October"
   }
 }

@@ -73,33 +73,38 @@ const data: Resume = {
           name: 'Hogeschool PXL',
           location: 'Hasselt'
         },
-        degreeName:
-          'Professionele Bachelor in de Toegepaste\nInformatica: Applicatie-ontwikkeling',
+        degreeName: 'education.credentials.pxl.degree',
         period: {
           start: {
-            month: 'september',
+            month: 'months.september',
             year: 2017
           },
           end: {
-            month: 'februari',
+            month: 'months.february',
             year: 2021
           }
         },
-        additionalInfo: 'Met grote onderscheiding'
+        additionalInfo: 'education.credentials.pxl.additionalInfo'
       }
     ],
     certifications: [
       {
         institution: 'Amazon Web Services (AWS)',
         name: 'AWS Certified Developer - Associate',
-        date: 'augustus 2021',
-        additionalInfo: 'Referentienummer 6P2444WDENBQQB9Y'
+        date: {
+          month: 'months.august',
+          year: 2021
+        },
+        additionalInfo: 'education.certificates.aws.additionalInfo'
       },
       {
         institution: 'Microsoft',
         name: 'Microsoft Certified: Azure Fundamentals',
-        date: 'oktober 2022',
-        additionalInfo: 'Referentienummer I435-4011'
+        date: {
+          month: 'months.october',
+          year: 2022
+        },
+        additionalInfo: 'education.certificates.azure.additionalInfo'
       }
     ]
   },
@@ -149,7 +154,7 @@ const data: Resume = {
         },
         end: {
           month: 'oktober',
-          year: 2021
+          year: 2020
         }
       }
     }

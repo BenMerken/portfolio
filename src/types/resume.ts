@@ -46,7 +46,10 @@ type Credentials = {
 export type Certifications = {
   name: string;
   institution: string;
-  date: string;
+  date: {
+    month: string;
+    year: number;
+  };
   additionalInfo?: string;
 }[];
 
