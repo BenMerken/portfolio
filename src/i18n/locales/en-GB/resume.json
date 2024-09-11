@@ -58,7 +58,8 @@
     }
   },
   "skills": {
-    "title": "Skills"
+    "title": "Skills",
+    "softwareDevelopment": "Software Development"
   },
   "months": {
     "february": "February",

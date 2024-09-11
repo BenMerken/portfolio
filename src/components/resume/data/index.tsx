@@ -161,7 +161,7 @@ const data: Resume = {
   ],
   skills: [
     {
-      category: 'Softwareontwikkeling',
+      category: 'skills.softwareDevelopment',
       skills: [
         'TypeScript',
         'JavaScript',

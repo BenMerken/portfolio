@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { useTranslation } from 'react-i18next';
 
 import sharedStyles, { colors } from '@/components/resume/_shared/styles';
 import { Skills as ResumeSkills } from '@/types/resume';
@@ -27,12 +28,14 @@ const skillsStyles = StyleSheet.create({
 });
 
 const Skills = ({ data }: SkillsProps) => {
+  const { t } = useTranslation('resume');
+
   return (
     <View style={sharedStyles.section}>
       <Text style={sharedStyles.rightTitle}>Vaardigheden</Text>
       {data.map((skillset, i) => (
         <View key={i}>
-          <Text style={sharedStyles.rightSubtitle}>{skillset.category}</Text>
+          <Text style={sharedStyles.rightSubtitle}>{t(skillset.category)}</Text>
           <View style={skillsStyles.skills}>
             {skillset.skills.map((skill, i) => (
               <Text key={i} style={skillsStyles.skill}>
