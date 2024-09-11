@@ -1,3 +1,13 @@
 {
-  "subtitle": "Full stack webontwikkelaar"
+  "nav": {
+    "language": "taal",
+    "resume": "Download mijn CV"
+  },
+  "main": {
+    "subtitle": "Full stack webontwikkelaar",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsa quisquam aliquid ipsum facere ut id maiores blanditiis modi labore aut maxime possimus, soluta quaerat optio fugiat veniam mollitia ipsam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia pariatur, quis voluptas odit porro veritatis? Ipsa ipsum illo ex tenetur, nihil ea, vitae ad magnam, asperiores vel impedit quasi perspiciatis."
+  },
+  "clients": {
+    "title": "Ik heb bijgedragen tot:"
+  }
 }
