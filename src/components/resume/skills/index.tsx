@@ -35,7 +35,7 @@ const Skills = ({ data }: SkillsProps) => {
       <Text style={sharedStyles.rightTitle}>Vaardigheden</Text>
       {data.map((skillset, i) => (
         <View key={i}>
-          <Text style={sharedStyles.rightSubtitle}>{t(skillset.category)}</Text>
+          <Text style={sharedStyles.rightSubtitle}>{t(skillset.category as 'resumeKey')}</Text>
           <View style={skillsStyles.skills}>
             {skillset.skills.map((skill, i) => (
               <Text key={i} style={skillsStyles.skill}>

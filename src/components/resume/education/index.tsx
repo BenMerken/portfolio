@@ -32,15 +32,18 @@ const Education = ({ data }: EducationProps) => {
       {data.credentials.map((edu, i) => (
         <View key={i} style={educationStyles.section}>
           <View style={educationStyles.degreeAndInstitution}>
-            <Text style={sharedStyles.rightSubtitle2}>{t(edu.degreeName)}</Text>
+            // @ts-expect-error
+            <Text style={sharedStyles.rightSubtitle2}>
+              {t(edu.degreeName as 'resumeKey')}
+            </Text>
             <Text>
-              {edu.institution.name} | {t(edu.period.start.month)}{' '}
-              {edu.period.start.year} - {t(edu.period.end?.month)}{' '}
-              {edu.period.end?.year}
+              {edu.institution.name as 'resumeKey'} |{' '}
+              {t(edu.period.start.month as 'resumeKey')} {edu.period.start.year}{' '}
+              - {t(edu.period.end?.month as 'resumeKey')} {edu.period.end?.year}
             </Text>
           </View>
           <Text style={educationStyles.additionalInfo}>
-            {t(edu.additionalInfo)}
+            {t(edu.additionalInfo as 'resumeKey')}
           </Text>
         </View>
       ))}
@@ -51,7 +54,8 @@ const Education = ({ data }: EducationProps) => {
         <View key={i} style={educationStyles.section}>
           <Text style={sharedStyles.rightSubtitle2}>{cred.name}</Text>
           <Text>
-            {cred.institution} | {t(cred.date.month)} {cred.date.year}
+            {cred.institution} | {t(cred.date.month as 'resumeKey')}{' '}
+            {cred.date.year}
           </Text>
         </View>
       ))}

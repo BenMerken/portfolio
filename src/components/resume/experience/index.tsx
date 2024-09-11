@@ -31,16 +31,20 @@ const Experience = ({ data }: ExperienceProps) => {
       <Text style={sharedStyles.rightTitle}>{t('experience.title')}</Text>
       {data.map((exp, i) => (
         <View key={i} style={experienceStyles.section}>
-          <Text style={sharedStyles.rightSubtitle2}>{t(exp.jobTitle)}</Text>
+          <Text style={sharedStyles.rightSubtitle2}>
+            {t(exp.jobTitle as 'resumeKey')}
+          </Text>
           <Text>
-            {exp.employer} | {t(exp.period.start.month)} {exp.period.start.year}{' '}
-            -{' '}
+            {exp.employer} | {t(exp.period.start.month as 'resumeKey')}{' '}
+            {exp.period.start.year} -{' '}
             {exp.period.end
-              ? `${t(exp.period.end.month)} ${exp.period.end.year}`
+              ? `${t(exp.period.end.month as 'resumeKey')} ${
+                  exp.period.end.year
+                }`
               : ''}
           </Text>
           <Text style={experienceStyles.additionalInfo}>
-            {t(exp.jobDescription)}
+            {t(exp.jobDescription as 'resumeKey')}
           </Text>
           {exp.highlightedProjects && (
             <View>

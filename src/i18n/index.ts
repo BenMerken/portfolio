@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
       resume: resumeNL
     }
   },
-  lng: 'en-GB',
+  lng: 'nl-BE',
   interpolation: {
     escapeValue: false
   }

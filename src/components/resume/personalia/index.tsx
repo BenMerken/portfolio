@@ -116,7 +116,7 @@ const Personalia = ({
                 <Text>{language.name}:</Text>
               </View>
               <Text style={personaliaStyles.languageProficiency}>
-                {t(language.proficiency)}
+                {t(language.proficiency as 'resumeKey')}
               </Text>
             </View>
           ))}
@@ -128,7 +128,7 @@ const Personalia = ({
           {hobbies.map((hobby, i) => (
             <View key={i} style={personaliaStyles.item}>
               {hobby.svg}
-              <Text>{t(hobby.name)}</Text>
+              <Text>{t(hobby.name as 'resumeKey')}</Text>
             </View>
           ))}
         </View>
