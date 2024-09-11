@@ -39,12 +39,6 @@ const Experience = ({ data }: ExperienceProps) => {
               ? `${t(exp.period.end.month)} ${exp.period.end.year}`
               : ''}
           </Text>
-          -
-          {exp.period.end && (
-            <Text>
-              {t(exp.period.end.month)} {exp.period.end.year}
-            </Text>
-          )}
           <Text style={experienceStyles.additionalInfo}>
             {t(exp.jobDescription)}
           </Text>
