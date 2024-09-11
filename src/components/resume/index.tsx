@@ -17,6 +17,7 @@ import sharedStyles, { colors } from '@/components/resume/_shared/styles';
 import { Resume as ResumeData } from '@/types/resume';
 import TopRightBackgroundSVG from './data/svg-components/backgrounds/top-right';
 import BackgroundTopSVG from './data/svg-components/backgrounds/top';
+import { useTranslation } from 'react-i18next';
 
 type ResumeProps = {
   data: ResumeData;
@@ -98,6 +99,8 @@ const documentStyles = StyleSheet.create({
 });
 
 const Resume = ({ data: { top, ...data } }: ResumeProps) => {
+  const { t } = useTranslation('resume');
+
   return (
     <PDFViewer className={classes.pdfViewer}>
       <Document author="Ben Merken" title="CV Ben Merken">
@@ -117,12 +120,14 @@ const Resume = ({ data: { top, ...data } }: ResumeProps) => {
                 <Text style={documentStyles.firstName}>{top.firstName}</Text>
                 <Text>{top.lastName}</Text>
               </View>
-              <Text>{top.jobTitle}</Text>
+              <Text>{t('top.jobTitle')}</Text>
             </View>
             <View style={documentStyles.rightContent}>
               <View style={sharedStyles.section}>
-                <Text style={sharedStyles.rightTitle}>Profiel</Text>
-                <Text>{data.profile}</Text>
+                <Text style={sharedStyles.rightTitle}>
+                  {t('profile.title')}
+                </Text>
+                <Text>{t('profile.text')}</Text>
               </View>
               <Experience data={data.experience} />
               <Education data={data.education} />

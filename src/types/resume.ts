@@ -17,22 +17,6 @@ type BioItem = {
 };
 
 export type Personalia = {
-  workExperience: {
-    svg: ReactNode;
-    text: string;
-  };
-  dateOfBirth: {
-    svg: ReactNode;
-    day: number;
-    month: string;
-    year: number;
-  };
-  residence: {
-    svg: ReactNode;
-    address: string;
-    zipCode: number;
-    city: string;
-  };
   phone: BioItem;
   email: BioItem;
   website?: BioItem;
@@ -93,10 +77,8 @@ export type Resume = {
   top: {
     firstName: string;
     lastName: string;
-    jobTitle: string;
   };
   personalia: Personalia;
-  profile: string;
   education: Education;
   experience: Experience;
   skills: Skills;

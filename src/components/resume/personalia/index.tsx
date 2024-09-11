@@ -1,7 +1,11 @@
 import { Image, StyleSheet, Text, View } from '@react-pdf/renderer';
 
 import sharedStyles from '@/components/resume/_shared/styles';
+import BabySVG from '@/components/resume/data/svg-components/baby';
+import PinSVG from '@/components/resume/data/svg-components/pin';
+import SuitcaseSVG from '@/components/resume/data/svg-components/suitcase';
 import { Personalia as PersonaliaData } from '@/types/resume';
+import { useTranslation } from 'react-i18next';
 
 type PersonaliaProps = {
   data: PersonaliaData;
@@ -62,35 +66,30 @@ const personaliaStyles = StyleSheet.create({
 });
 
 const Personalia = ({
-  data: { workExperience, dateOfBirth, residence, hobbies, languages, ...items }
+  data: { hobbies, languages, ...items }
 }: PersonaliaProps) => {
+  const { t } = useTranslation('resume');
+
   return (
     <View style={personaliaStyles.personalia}>
-      <Image
-        style={personaliaStyles.avatar}
-        src="profile.jpg"
-      />
+      <Image style={personaliaStyles.avatar} src="profile.jpg" />
       <View>
-        <Text style={sharedStyles.leftTitle}>Personalia</Text>
+        <Text style={sharedStyles.leftTitle}>{t('personalia.title')}</Text>
         <View style={personaliaStyles.items}>
           <View style={personaliaStyles.item}>
-            {dateOfBirth.svg}
-            <Text>
-              {dateOfBirth.day} {dateOfBirth.month} {dateOfBirth.year}
-            </Text>
+            <BabySVG />
+            <Text>25 {t('personalia.dateOfBirth.month')} 1995</Text>
           </View>
           <View style={personaliaStyles.item}>
-            {residence.svg}
+            <PinSVG />
             <View>
-              <Text>{residence.address}</Text>
-              <Text>
-                {residence.zipCode} {residence.city}
-              </Text>
+              <Text>Molenveld 13</Text>
+              <Text>3650 Dilsen-Stokkem</Text>
             </View>
           </View>
           <View style={personaliaStyles.item}>
-            {workExperience.svg}
-            <Text>{workExperience.text}</Text>
+            <SuitcaseSVG />
+            <Text>{t('personalia.workExperience')}</Text>
           </View>
         </View>
         <Text style={sharedStyles.leftTitle}>Contact</Text>
@@ -103,7 +102,9 @@ const Personalia = ({
             </View>
           ))}
         </View>
-        <Text style={sharedStyles.leftTitle}>Talen</Text>
+        <Text style={sharedStyles.leftTitle}>
+          {t('personalia.languages.title')}
+        </Text>
         <View style={personaliaStyles.items}>
           {languages.map((language, i) => (
             <View
@@ -115,17 +116,19 @@ const Personalia = ({
                 <Text>{language.name}:</Text>
               </View>
               <Text style={personaliaStyles.languageProficiency}>
-                {language.proficiency}
+                {t(language.proficiency)}
               </Text>
             </View>
           ))}
         </View>
-        <Text style={sharedStyles.leftTitle}>Hobby's</Text>
+        <Text style={sharedStyles.leftTitle}>
+          {t('personalia.hobbies.title')}
+        </Text>
         <View style={personaliaStyles.items}>
           {hobbies.map((hobby, i) => (
             <View key={i} style={personaliaStyles.item}>
               {hobby.svg}
-              <Text>{hobby.name}</Text>
+              <Text>{t(hobby.name)}</Text>
             </View>
           ))}
         </View>

@@ -1,4 +1,3 @@
-import BabySVG from '@/components/resume/data/svg-components/baby';
 import BooksSVG from '@/components/resume/data/svg-components/books';
 import ColumnSVG from '@/components/resume/data/svg-components/colmn';
 import EmailSVG from '@/components/resume/data/svg-components/email';
@@ -7,8 +6,6 @@ import GithubSVG from '@/components/resume/data/svg-components/github.';
 import GuitarSVG from '@/components/resume/data/svg-components/guitar';
 import LinkedinSVG from '@/components/resume/data/svg-components/linkedin';
 import PhoneSVG from '@/components/resume/data/svg-components/phone';
-import PinSVG from '@/components/resume/data/svg-components/pin';
-import SuitcaseSVG from '@/components/resume/data/svg-components/suitcase';
 import NetherlandsFlagSVG from '@/components/resume/data/svg-components/flags/nl';
 import GreatBritainFlagSVG from '@/components/resume/data/svg-components/flags/gb';
 import FranceFlagSVG from '@/components/resume/data/svg-components/flags/fr';
@@ -18,26 +15,9 @@ import { Resume } from '@/types/resume';
 const data: Resume = {
   top: {
     firstName: 'Ben',
-    lastName: 'Merken',
-    jobTitle: 'Full Stack webontwikkelaar'
+    lastName: 'Merken'
   },
   personalia: {
-    dateOfBirth: {
-      svg: <BabySVG />,
-      day: 25,
-      month: 'april',
-      year: 1995
-    },
-    workExperience: {
-      svg: <SuitcaseSVG />,
-      text: '3,5 jaar ervaring'
-    },
-    residence: {
-      svg: <PinSVG />,
-      address: 'Molenveld 13',
-      zipCode: 3650,
-      city: 'Dilsen-Stokkem'
-    },
     phone: {
       svg: <PhoneSVG />,
       name: '+32 489 43 21 30'
@@ -62,32 +42,30 @@ const data: Resume = {
       {
         svg: <NetherlandsFlagSVG />,
         name: 'nl',
-        proficiency: 'Moedertaal'
+        proficiency: 'personalia.languages.dutch'
       },
       {
         svg: <GreatBritainFlagSVG />,
         name: 'en',
-        proficiency: 'Professionele vaardigheid'
+        proficiency: 'personalia.languages.english'
       },
       {
         svg: <FranceFlagSVG />,
         name: 'fr',
-        proficiency: 'Spreken: matig; lezen: goed'
+        proficiency: 'personalia.languages.french'
       },
       {
         svg: <GermanyFlagSVG />,
         name: 'de',
-        proficiency: 'Spreken: matig; lezen: goed'
+        proficiency: 'personalia.languages.german'
       }
     ],
     hobbies: [
-      { svg: <GuitarSVG />, name: 'Klassieke gitaar' },
-      { svg: <ColumnSVG />, name: '(Oude) Geschiedenis' },
-      { svg: <BooksSVG />, name: 'Lezen' }
+      { svg: <GuitarSVG />, name: 'personalia.hobbies.guitar' },
+      { svg: <ColumnSVG />, name: 'personalia.hobbies.history' },
+      { svg: <BooksSVG />, name: 'personalia.hobbies.reading' }
     ]
   },
-  profile:
-    'Met 3,5 jaar ervaring als full-stack webontwikkelaar en consultant heb ik een brede expertise opgebouwd in zowel front-end als back-end ontwikkeling, evenals het adviseren van klanten over technische oplossingen.\nNa deze toegewijde jaren in software consultancy ben ik nu op zoek naar een nieuwe uitdaging in in-house productontwikkeling, waar ik mijn technische kennis kan inzetten om te werken aan langetermijnprojecten en de kwaliteit van een product verder kan optimaliseren. Daarnaast ben ik gemotiveerd om me verder te ontwikkelen en sta ik open om aanvullende training te volgen in quality assurance en netwerkbeheer om mijn vaardigheden uit te breiden en een breder scala aan technische verantwoordelijkheden op me te nemen.',
   education: {
     credentials: [
       {
