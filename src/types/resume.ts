@@ -35,7 +35,7 @@ export type Personalia = {
   };
   phone: BioItem;
   email: BioItem;
-  website: BioItem;
+  website?: BioItem;
   linkedin: BioItem;
   github: BioItem;
   hobbies: {

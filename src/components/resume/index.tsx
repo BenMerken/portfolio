@@ -124,8 +124,8 @@ const Resume = ({ data: { top, ...data } }: ResumeProps) => {
                 <Text style={sharedStyles.rightTitle}>Profiel</Text>
                 <Text>{data.profile}</Text>
               </View>
-              <Education data={data.education} />
               <Experience data={data.experience} />
+              <Education data={data.education} />
               <Skills data={data.skills} />
             </View>
           </View>
