@@ -13,17 +13,19 @@ const skillsStyles = StyleSheet.create({
     display: 'flex',
     flexWrap: 'wrap',
     flexDirection: 'row',
-    gap: 2
+    gap: 4
   },
   skill: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
 
-    padding: 2,
+    padding: 4,
+
+    textAlign: 'center',
 
     border: `1px solid ${colors.backgroundPrimary}`,
-    borderRadius: 8
+    borderRadius: '50%'
   }
 });
 
@@ -32,10 +34,12 @@ const Skills = ({ data }: SkillsProps) => {
 
   return (
     <View style={sharedStyles.section}>
-      <Text style={sharedStyles.rightTitle}>Vaardigheden</Text>
+      <Text style={sharedStyles.rightTitle}>{t('skills.title')}</Text>
       {data.map((skillset, i) => (
         <View key={i}>
-          <Text style={sharedStyles.rightSubtitle}>{t(skillset.category as 'resumeKey')}</Text>
+          <Text style={sharedStyles.rightSubtitle}>
+            {t(skillset.category as 'resumeKey')}
+          </Text>
           <View style={skillsStyles.skills}>
             {skillset.skills.map((skill, i) => (
               <Text key={i} style={skillsStyles.skill}>
