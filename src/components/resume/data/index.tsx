@@ -169,6 +169,7 @@ const data: Resume = {
         'HTML',
         'CSS',
         'Sass',
+        'PWA',
         'React Native',
         'SQL',
         'Agile',
