@@ -1,49 +1,335 @@
-import { Path, Rect, Svg } from '@react-pdf/renderer';
+import { Path, Svg, Rect } from '@react-pdf/renderer';
 
 const BottomBackgroundSVG = () => {
   return (
     <Svg width="595" height="46" viewBox="0 0 595 46" fill="none">
-      <Rect x="228" y="24" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="243" y="11" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="258" y="20" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="273" y="34" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="288" y="18" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="288" y="20" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="318" y="23" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="333" y="7" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="348" y="19" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="363" y="8" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="378" y="20" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="318" y="27" width="179" height="54" fill="#3CE3B4" />
-      <Rect x="408" y="20" width="30" height="54" fill="#3CE3B4" />
-      <Path d="M423 8H438V62H423V8Z" fill="#3CE3B4" />
-      <Rect x="408" y="24" width="74" height="54" fill="#3CE3B4" />
-      <Rect x="452" y="13" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="467" y="18" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="482" y="26" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="318" y="34" width="254" height="54" fill="#3CE3B4" />
-      <Rect x="512" y="16" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="512" y="20" width="30" height="54" fill="#3CE3B4" />
-      <Rect x="512" y="30" width="60" height="54" fill="#3CE3B4" />
-      <Path d="M557 24H572V78H557V24Z" fill="#3CE3B4" />
-      <Path d="M0 38H595V92H0V38Z" fill="#3CE3B4" />
-      <Rect x="587" y="30" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="-10" y="8" width="15" height="54" fill="#3CE3B4" />
-      <Rect y="20" width="20" height="54" fill="#3CE3B4" />
-      <Rect y="27" width="35" height="54" fill="#3CE3B4" />
-      <Rect x="35" y="20" width="74" height="54" fill="#3CE3B4" />
-      <Rect x="50" y="8" width="30" height="54" fill="#3CE3B4" />
-      <Rect x="65" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="50" y="13" width="44" height="54" fill="#3CE3B4" />
-      <Rect x="50" y="18" width="59" height="54" fill="#3CE3B4" />
-      <Rect y="26" width="124" height="54" fill="#3CE3B4" />
-      <Rect x="124" y="34" width="75" height="54" fill="#3CE3B4" />
-      <Rect x="139" y="16" width="15" height="54" fill="#3CE3B4" />
-      <Rect x="139" y="20" width="30" height="54" fill="#3CE3B4" />
-      <Rect x="139" y="30" width="60" height="54" fill="#3CE3B4" />
-      <Path d="M184 24H199V78H184V24Z" fill="#3CE3B4" />
-      <Path d="M0 38H595V92H0V38Z" fill="#3CE3B4" />
-      <Rect x="214" y="30" width="59" height="54" fill="#3CE3B4" />
+      <Rect
+        x="-9.5"
+        y="8.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="65.5"
+        y="34.5"
+        width="14"
+        height="19"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="572.5"
+        y="26.5"
+        width="14"
+        height="19"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="423.5"
+        y="26.5"
+        width="14"
+        height="19"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="80.5"
+        y="24.5"
+        width="14"
+        height="29"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="438.5"
+        y="16.5"
+        width="14"
+        height="29"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="95.5"
+        y="29.5"
+        width="14"
+        height="24"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="453.5"
+        y="21.5"
+        width="14"
+        height="24"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="110.5"
+        y="13.5"
+        width="14"
+        height="40"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="468.5"
+        y="5.5"
+        width="14"
+        height="40"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="125.5"
+        y="0.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="483.5"
+        y="18.5"
+        width="14"
+        height="27"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="50.5"
+        y="0.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="557.5"
+        y="8.5"
+        width="14"
+        height="37"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="408.5"
+        y="16.5"
+        width="14"
+        height="29"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="35.5"
+        y="27.5"
+        width="14"
+        height="26"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="542.5"
+        y="19.5"
+        width="14"
+        height="26"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="586.5"
+        y="21.5"
+        width="14"
+        height="26"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="20.5"
+        y="11.5"
+        width="14"
+        height="42"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="527.5"
+        y="16.5"
+        width="14"
+        height="29"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="5.5"
+        y="20.5"
+        width="14"
+        height="33"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="512.5"
+        y="12.5"
+        width="14"
+        height="33"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="139.5"
+        y="13.5"
+        width="14"
+        height="56"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="497.5"
+        y="24.5"
+        width="14"
+        height="37"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="154.5"
+        y="29.5"
+        width="14"
+        height="40"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="169.5"
+        y="20.5"
+        width="14"
+        height="49"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Path
+        d="M184.5 24.5H198.5V77.5H184.5V24.5Z"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Path
+        d="M199.5 13.5H213.5V77.5H199.5V13.5Z"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Path
+        d="M213.5 5.5H227.5V76.5H213.5V5.5Z"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="228.5"
+        y="24.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="243.5"
+        y="11.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="258.5"
+        y="20.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="273.5"
+        y="34.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="288.5"
+        y="18.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="288.5"
+        y="20.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="303.5"
+        y="20.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="318.5"
+        y="23.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="333.5"
+        y="7.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="348.5"
+        y="19.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="363.5"
+        y="8.5"
+        width="14"
+        height="53"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="378.5"
+        y="18.5"
+        width="14"
+        height="55"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
+      <Rect
+        x="393.5"
+        y="32.5"
+        width="14"
+        height="41"
+        fill="#3CE3B4"
+        stroke="#3CE3B4"
+      />
     </Svg>
   );
 };
