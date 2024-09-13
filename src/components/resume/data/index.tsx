@@ -112,8 +112,7 @@ const data: Resume = {
     {
       employer: 'AppFoundry NV',
       jobTitle: 'experience.appFoundry.jobTitle',
-      jobDescription:
-        'experience.appFoundry.description',
+      jobDescription: 'experience.appFoundry.description',
       highlightedProjects: [
         {
           client: 'FOD BOSA',
@@ -145,8 +144,7 @@ const data: Resume = {
     {
       employer: 'Alpine Digital',
       jobTitle: 'experience.alpine.jobTitle',
-      jobDescription:
-        'experience.alpine.description',
+      jobDescription: 'experience.alpine.description',
       period: {
         start: {
           month: 'months.august',
@@ -185,7 +183,8 @@ const data: Resume = {
         'Git',
         'ESLint',
         'Confluence',
-        'Jira'
+        'Jira',
+        'Figma'
       ]
     },
     {
