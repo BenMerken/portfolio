@@ -28,15 +28,15 @@ const data: Resume = {
     },
     // website: {
     //   svg: <GlobeSVG />,
-    //   name: 'https://www.benmerken.com/'
+    //   name: 'https://www.benmerken.com'
     // },
     linkedin: {
       svg: <LinkedinSVG />,
-      name: 'https://www.linkedin.com/in/benmerken/'
+      name: 'https://www.linkedin.com/in/benmerken'
     },
     github: {
       svg: <GithubSVG />,
-      name: 'https://www.github.com/benmerken/'
+      name: 'https://www.github.com/benmerken'
     },
     languages: [
       {
@@ -173,6 +173,7 @@ const data: Resume = {
         'Tailwind CSS',
         'PWA',
         'React Native',
+        'REST',
         'SQL',
         'Agile',
         'DevOps'
