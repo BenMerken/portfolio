@@ -37,7 +37,7 @@ const documentStyles = StyleSheet.create({
     lineHeight: '1.2pt'
   },
   left: {
-    flex: 6,
+    flex: 5,
 
     minHeight: '100vh',
     padding: 20,
