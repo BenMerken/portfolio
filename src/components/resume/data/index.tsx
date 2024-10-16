@@ -175,8 +175,7 @@ const data: Resume = {
         'React Native',
         'REST',
         'SQL',
-        'Agile',
-        'DevOps'
+        'Agile'
       ]
     },
     {
