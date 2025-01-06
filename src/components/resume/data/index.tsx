@@ -120,6 +120,10 @@ const data: Resume = {
             start: {
               month: 'months.august',
               year: 2022
+            },
+            end: {
+              month: 'months.january',
+              year: 2025
             }
           },
           description: 'experience.appFoundry.description'
@@ -138,6 +142,10 @@ const data: Resume = {
         start: {
           month: 'months.march',
           year: 2021
+        },
+        end: {
+          month: 'months.january',
+          year: 2025
         }
       }
     },

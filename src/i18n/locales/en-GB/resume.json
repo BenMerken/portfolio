@@ -5,7 +5,7 @@
   },
   "profile": {
     "title": "Profile",
-    "text": "With 3.5 years of experience as a full-stack web developer and consultant, I have developed extensive expertise in both front-end and back-end development, as well as advising clients on technical solutions.\nAfter these years in consultancy, I am now looking for a new challenge in in-house product development, where I can apply my technical knowledge to work on long-term projects and further optimize the quality of a product. Additionally, I am motivated to continue developing myself and am open to taking up additional training in network management to broaden my skills and take on a wider range of technical responsibilities."
+    "text": "With more than 3.5 years of experience as a full-stack web developer and consultant, I have developed extensive expertise in both front-end and back-end development, as well as advising clients on technical solutions.\nAfter these years in consultancy, I am now looking for a new challenge in in-house product development, where I can apply my technical knowledge to work on long-term projects and further optimize the quality of a product. Additionally, I am motivated to continue developing myself and am open to taking up additional training in network management to broaden my skills and take on a wider range of technical responsibilities."
   },
   "personalia": {
     "title": "Personalia",
@@ -63,6 +63,7 @@
     "softwareDevelopment": "Software Development"
   },
   "months": {
+    "january": "January",
     "february": "February",
     "march": "March",
     "august": "August",

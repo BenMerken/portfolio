@@ -5,7 +5,7 @@
   },
   "profile": {
     "title": "Profiel",
-    "text": "Met 3,5 jaar ervaring als full-stack webontwikkelaar en consultant heb ik een brede expertise opgebouwd in zowel front-end als back-end ontwikkeling, evenals het adviseren van klanten over technische oplossingen.\nNa deze toegewijde jaren in software consultancy ben ik nu op zoek naar een nieuwe uitdaging in in-house productontwikkeling, waar ik mijn technische kennis kan inzetten om te werken aan langetermijnprojecten en de kwaliteit van een product verder kan optimaliseren. Daarnaast ben ik gemotiveerd om me verder te ontwikkelen en sta ik open om aanvullende training te volgen in quality assurance en netwerkbeheer om mijn vaardigheden uit te breiden en een breder scala aan technische verantwoordelijkheden op me te nemen"
+    "text": "Met meer dan 3,5 jaar ervaring als full-stack webontwikkelaar en consultant heb ik een brede expertise opgebouwd in zowel front-end als back-end ontwikkeling, evenals het adviseren van klanten over technische oplossingen.\nNa deze toegewijde jaren in software consultancy ben ik nu op zoek naar een nieuwe uitdaging in in-house productontwikkeling, waar ik mijn technische kennis kan inzetten om te werken aan langetermijnprojecten en de kwaliteit van een product verder kan optimaliseren. Daarnaast ben ik gemotiveerd om me verder te ontwikkelen en sta ik open om aanvullende training te volgen in quality assurance en netwerkbeheer om mijn vaardigheden uit te breiden en een breder scala aan technische verantwoordelijkheden op me te nemen"
   },
   "personalia": {
     "title": "Personalia",
@@ -30,7 +30,7 @@
   "experience": {
     "title": "Ervaring",
     "appFoundry": {
-      "jobTitle": "Ontwikkelaar / Consultant",
+      "jobTitle": "Software-ontwikkelaar / Consultant",
       "description": "Ontwikkeling en onderhoud van TypeScript/JavaScript-applicaties, zowel in-house als voor AppFoundrys klanten, voornamelijk webapplicaties, ontwikkeld met React/Next.js, maar ook mobiele applicaties, ontwikkeld met React Native.",
       "clients": "Mijn huidige en voormalige klanten:"
     },
@@ -63,6 +63,7 @@
     "softwareDevelopment": "Softwareontwikkeling"
   },
   "months": {
+    "january": "januari",
     "february": "februari",
     "march": "maart",
     "august": "augustus",
