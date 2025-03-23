@@ -6,13 +6,17 @@ const HomePage = () => {
   return (
     <>
       <main className="main-content">
-        <section className="hero">
-          Hello world!
-          <h1>Ben Merken</h1>
-          here!
+        <section className="intro">
+          <p className="greeting">
+            Hello world!{' '}
+            <span>
+              <span className="author-name">Ben Merken</span> here!
+            </span>
+          </p>
           {/* TODO: Idea - add other words to interchange with 'develop' (ex. 'analyze', 'drink coffee', 'play the guitar',...), switching between them with a backspace-and-fill-in cursor effect */}
           <h2>
-            I <span className="activity">develop</span>, so you don't have to!
+            I <span className="activity">develop software</span>, so you don't
+            have to!
           </h2>
           <p>
             For the past four years, I've been active as a full-stack developer
@@ -21,8 +25,9 @@ const HomePage = () => {
             skillset.
           </p>
           <p>
-            Currently, I am open for new opportunities in Belgium! If you're
-            interested, <a href="mailto:ben.merken@gmail.com">let me know!</a>
+            Currently, I am open for new opportunities in Belgium (preferably,
+            in / close to Limburg). If you're interested,{' '}
+            <a href="mailto:ben.merken@gmail.com">let me know!</a>
           </p>
         </section>
       </main>
