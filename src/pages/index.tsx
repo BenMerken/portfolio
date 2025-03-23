@@ -8,7 +8,7 @@ const HomePage = () => {
       <main className="main-content">
         <section className="intro">
           <p className="greeting">
-            Hello world!{' '}
+            Hello world,{' '}
             <span>
               <span className="author-name">Ben Merken</span> here!
             </span>
