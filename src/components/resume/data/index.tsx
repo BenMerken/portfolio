@@ -1,7 +1,7 @@
 import BooksSVG from '@/components/resume/data/svg-components/books';
 import ColumnSVG from '@/components/resume/data/svg-components/colmn';
 import EmailSVG from '@/components/resume/data/svg-components/email';
-import GithubSVG from '@/components/resume/data/svg-components/github.';
+import GithubSVG from '@/components/resume/data/svg-components/github';
 // import GlobeSVG from '@/components/resume/data/svg-components/globe';
 import GuitarSVG from '@/components/resume/data/svg-components/guitar';
 import LinkedinSVG from '@/components/resume/data/svg-components/linkedin';
