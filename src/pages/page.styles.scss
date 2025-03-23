@@ -1,0 +1,14 @@
+@use '@/styles/colors';
+@use '@/styles/utils';
+
+.hero {
+  @include utils.text-container;
+
+  h1 {
+    color: colors.$branding-color-primary;
+  }
+
+  h2 .activity {
+    color: colors.$branding-color-secondary;
+  }
+}

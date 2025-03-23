@@ -1,0 +1,19 @@
+@use '@/styles/colors';
+@use '@/styles/utils';
+
+.footer {
+  @include utils.text-container;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: colors.$background-color-secondary;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+  list-style: none;
+}

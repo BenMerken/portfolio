@@ -1,20 +1,33 @@
-import { Link } from 'react-router-dom';
+import Footer from '@/components/footer';
 
-import '@/App.css';
+import './page.styles.scss';
 
 const HomePage = () => {
   return (
-    <main id="main">
-      <h1>Ben Merken</h1>
-      <p>🚧 Under construction 👷</p>
-      <p>
-        Welcome to the personal portfolio of Ben Merken! As you can see, it's
-        still quite empty! 😅 Be sure to check back later! 👋
-      </p>
-      <Link to="resume" target="_blank">
-        To resume
-      </Link>
-    </main>
+    <>
+      <main className="main-content">
+        <section className="hero">
+          Hello world!
+          <h1>Ben Merken</h1>
+          here!
+          {/* TODO: Idea - add other words to interchange with 'develop' (ex. 'analyze', 'drink coffee', 'play the guitar',...), switching between them with a backspace-and-fill-in cursor effect */}
+          <h2>
+            I <span className="activity">develop</span>, so you don't have to!
+          </h2>
+          <p>
+            For the past four years, I've been active as a full-stack developer
+            with a passion for learning and creating. I have experience with a
+            variety of technologies and I am always looking to expand my
+            skillset.
+          </p>
+          <p>
+            Currently, I am open for new opportunities in Belgium! If you're
+            interested, <a href="mailto:ben.merken@gmail.com">let me know!</a>
+          </p>
+        </section>
+      </main>
+      <Footer />
+    </>
   );
 };
 
