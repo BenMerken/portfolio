@@ -1,0 +1,25 @@
+@use './colors';
+
+@mixin root {
+  font-family: Merriweather, serif;
+}
+
+@mixin heading {
+  font-family: Sora, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+@mixin text-normal {
+  @include root;
+
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+@mixin text-small {
+  @include root;
+
+  font-weight: 400;
+  font-size: 0.8rem;
+}

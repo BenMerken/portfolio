@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ResumePage from '@/pages/resume';
 import HomePage from '@/pages';
 import '@/i18n/index';
-import '@/index.css';
+import '@/index.scss';
 
 const router = createBrowserRouter([
   {
