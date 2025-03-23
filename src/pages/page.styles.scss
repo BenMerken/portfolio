@@ -1,14 +1,28 @@
 @use '@/styles/colors';
+@use '@/styles/fonts';
 @use '@/styles/utils';
 
-.hero {
+.intro {
   @include utils.text-container;
 
-  h1 {
-    color: colors.$branding-color-primary;
+  .greeting {
+    font-size: 0.8rem;
+    & > span {
+      display: block;
+      margin-top: 1em;
+
+      .author-name {
+        @include fonts.heading;
+
+        margin-right: 0.2em;
+
+        font-size: 4rem;
+        color: colors.$branding-color-primary;
+      }
+    }
   }
 
   h2 .activity {
-    color: colors.$branding-color-secondary;
+    color: colors.$branding-color-primary;
   }
 }

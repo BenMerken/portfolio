@@ -16,4 +16,11 @@
   gap: 1em;
 
   list-style: none;
+
+  svg * {
+    fill: colors.$icons-color;
+  }
+  svg:hover * {
+    fill: colors.$branding-color-secondary;
+  }
 }
