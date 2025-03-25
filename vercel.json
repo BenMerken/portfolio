@@ -1,3 +1,6 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [
+    { "source": "/", "destination": "/resume", "permanent": false },
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
