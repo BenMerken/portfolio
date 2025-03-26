@@ -2,6 +2,7 @@ import {
   Document,
   Page,
   PDFViewer,
+  PDFDownloadLink,
   StyleSheet,
   Text,
   View
@@ -98,47 +99,62 @@ const documentStyles = StyleSheet.create({
   }
 });
 
-const Resume = ({ data: { top, ...data } }: ResumeProps) => {
+const PDFDocument = ({ data: { top, ...data } }: ResumeProps) => {
   const { t } = useTranslation('resume');
 
   return (
+    <Document author="Ben Merken" title="CV Ben Merken">
+      <Page size="A4" orientation="portrait" style={documentStyles.page}>
+        <View style={documentStyles.backgroundTop}>
+          <BackgroundTopSVG />
+        </View>
+        <View style={documentStyles.backgroundTopRight}>
+          <TopRightBackgroundSVG />
+        </View>
+        <View style={documentStyles.left}>
+          <Personalia data={data.personalia} />
+        </View>
+        <View style={documentStyles.right}>
+          <View style={documentStyles.top}>
+            <View style={documentStyles.name}>
+              <Text style={documentStyles.firstName}>{top.firstName}</Text>
+              <Text>{top.lastName}</Text>
+            </View>
+            <Text>{t('top.jobTitle')}</Text>
+          </View>
+          <View style={documentStyles.rightContent}>
+            <View style={sharedStyles.section}>
+              <Text style={sharedStyles.rightTitle}>{t('profile.title')}</Text>
+              <Text>{t('profile.text')}</Text>
+            </View>
+            <Experience data={data.experience} />
+            <Education data={data.education} />
+            <Skills data={data.skills} />
+          </View>
+        </View>
+        <View style={documentStyles.backgroundBottom}>
+          <BottomBackgroundSVG />
+        </View>
+      </Page>
+    </Document>
+  );
+};
+
+const Resume = (props: ResumeProps) => {
+  return navigator.userAgent.toLowerCase().includes('mobile') ? (
+    <p className={classes.pdfNotAvailableText}>
+      The resume is not available in preview mode on mobile devices. Download it{' '}
+      <PDFDownloadLink
+        document={<PDFDocument {...props} />}
+        fileName="ben-merken-resume.pdf"
+      >
+        here
+      </PDFDownloadLink>{' '}
+      to view in a PDF reader.
+    </p>
+  ) : (
     <PDFViewer className={classes.pdfViewer}>
-      <Document author="Ben Merken" title="CV Ben Merken">
-        <Page size="A4" orientation="portrait" style={documentStyles.page}>
-          <View style={documentStyles.backgroundTop}>
-            <BackgroundTopSVG />
-          </View>
-          <View style={documentStyles.backgroundTopRight}>
-            <TopRightBackgroundSVG />
-          </View>
-          <View style={documentStyles.left}>
-            <Personalia data={data.personalia} />
-          </View>
-          <View style={documentStyles.right}>
-            <View style={documentStyles.top}>
-              <View style={documentStyles.name}>
-                <Text style={documentStyles.firstName}>{top.firstName}</Text>
-                <Text>{top.lastName}</Text>
-              </View>
-              <Text>{t('top.jobTitle')}</Text>
-            </View>
-            <View style={documentStyles.rightContent}>
-              <View style={sharedStyles.section}>
-                <Text style={sharedStyles.rightTitle}>
-                  {t('profile.title')}
-                </Text>
-                <Text>{t('profile.text')}</Text>
-              </View>
-              <Experience data={data.experience} />
-              <Education data={data.education} />
-              <Skills data={data.skills} />
-            </View>
-          </View>
-          <View style={documentStyles.backgroundBottom}>
-            <BottomBackgroundSVG />
-          </View>
-        </Page>
-      </Document>
+      <PDFDocument {...props} />
     </PDFViewer>
   );
 };
