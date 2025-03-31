@@ -16,19 +16,19 @@ function Footer() {
       name: 'GitHub',
       url: 'https://www.github.com/benmerken',
       icon: <GitHubSVG />,
-      label: "Navigate to Ben Merken's GitHub profile"
+      label: "Ben Merken's GitHub profile"
     },
     {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/benmerken',
       icon: <LinkedInSVG />,
-      label: "Navigate to Ben Merken's LinkedIn profile"
+      label: "Ben Merken's LinkedIn profile"
     },
     {
       name: 'Email',
       url: 'mailto:ben.merken@gmail.com',
       icon: <EnvelopeSVG />,
-      label: 'Send an email to Ben Merken'
+      label: 'Email to Ben Merken'
     }
   ];
   return (
@@ -40,20 +40,23 @@ function Footer() {
         </span>{' '}
         by Ben Merken.
       </small>
-      <ul className="socials">
-        {socials.map((social) => (
-          <li key={social.name}>
-            <a
-              href={social.url}
-              aria-label={social.label}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {social.icon}
-            </a>
-          </li>
-        ))}
-      </ul>
+      <nav>
+        <ul className="socials">
+          {socials.map((social) => (
+            <li key={social.name}>
+              <a
+                href={social.url}
+                aria-label={social.label}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {social.icon}
+                <span className="sr-only">{social.name}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </footer>
   );
 }

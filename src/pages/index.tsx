@@ -27,7 +27,12 @@ const HomePage = () => {
           <p>
             Currently, I am open for new opportunities in Belgium (preferably,
             in / close to Limburg). If you're interested,{' '}
-            <a href="mailto:ben.merken@gmail.com">let me know!</a>
+            <a
+              href="mailto:ben.merken@gmail.com"
+              aria-label="Email to Ben Merken"
+            >
+              let me know!
+            </a>
           </p>
         </section>
       </main>
