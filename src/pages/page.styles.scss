@@ -2,9 +2,11 @@
 @use '@/styles/fonts';
 @use '@/styles/utils';
 
-.intro {
+section {
   @include utils.text-container;
+}
 
+#hero {
   .greeting {
     font-size: 0.8rem;
     & > span {
