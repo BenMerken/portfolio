@@ -1,0 +1,26 @@
+@use '@/styles/colors';
+
+.header {
+  padding: 1em 0;
+  text-align: center;
+}
+
+.top-nav {
+  ol {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    a {
+      text-decoration: none;
+      color: colors.$branding-color-primary;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: lighten(colors.$branding-color-primary, 10%);
+      }
+    }
+  }
+}

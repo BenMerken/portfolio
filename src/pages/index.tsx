@@ -26,15 +26,25 @@ const HomePage = () => {
           </p>
           <p>
             Currently, I am open for new opportunities in Belgium (preferably,
-            in / close to Limburg). If you're interested,{' '}
-            <a
-              href="mailto:ben.merken@gmail.com"
-              aria-label="Email to Ben Merken"
-            >
-              let me know!
-            </a>
+            in / close to Limburg). If you're in the market for a new developer,{' '}
+            <a href="#contact">let me know!</a>
+          </p>
+          <p>
+            Whenever I'm not coding, I prefer playing my guitar, which I've been
+            doing for the past 14 years, or spending time with a book or a video
+            game. More recently, I've also been picking up the knitting needles
+            and crochet hook more and more.
           </p>
         </section>
+        <section id="projects">
+          <h2>Experiences</h2>
+          <small>
+            The following is a summary of my professional and recreational
+            software development experiences.
+          </small>
+        </section>
+        <section id="contact"></section>
+        <Contact />
       </main>
       <Footer />
     </>

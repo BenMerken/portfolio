@@ -1,4 +1,3 @@
-import EnvelopeSVG from '@/assets/envelope.svg?react';
 import GitHubSVG from '@/assets/github.svg?react';
 import LinkedInSVG from '@/assets/linkedin.svg?react';
 
@@ -23,12 +22,6 @@ function Footer() {
       url: 'https://www.linkedin.com/in/benmerken',
       icon: <LinkedInSVG />,
       label: "Ben Merken's LinkedIn profile"
-    },
-    {
-      name: 'Email',
-      url: 'mailto:ben.merken@gmail.com',
-      icon: <EnvelopeSVG />,
-      label: 'Email to Ben Merken'
     }
   ];
   return (
