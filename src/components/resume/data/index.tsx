@@ -183,6 +183,7 @@ const data: Resume = {
         'React Native',
         'REST',
         'SQL',
+        'MongoDB',
         'Agile'
       ]
     },

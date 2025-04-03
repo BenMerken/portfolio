@@ -5,7 +5,7 @@
   },
   "profile": {
     "title": "Profile",
-    "text": "With 4 years of experience as a full-stack web developer and consultant, I have developed extensive expertise in both front-end and back-end development, as well as advising clients on technical solutions.\nAfter these years in consultancy, I am now looking for a new challenge in in-house product development, where I can apply my technical knowledge to work on long-term projects and further optimize the quality of a product. Additionally, I am motivated to continue developing myself and am open to taking up additional training in network management to broaden my skills and take on a wider range of technical responsibilities."
+    "text": "With 4 years of experience as a full-stack web developer and consultant, I have developed extensive expertise in both front-end and back-end development, as well as advising clients on technical solutions.\nAfter these years in consultancy, I am now looking for a new challenge, where I can apply my technical knowledge and soft skills to work on long-term projects and further optimize the quality of a product. Additionally, I am motivated to continue developing myself and am open to taking up additional training to broaden my skills and take on a wider range of technical or administrative responsibilities."
   },
   "personalia": {
     "title": "Personalia",
@@ -31,7 +31,7 @@
     "title": "Experience",
     "appFoundry": {
       "jobTitle": "Developer / Consultant",
-      "description": "Development and maintenance of TypeScript/Javascript based applications, both in-house and for AppFoundry's clients, primarily web applications, developed in React/Next.js, but also mobile apps, developed in React Native.",
+      "description": "Development and maintenance of TypeScript/Javascript based applications, both in-house and for AppFoundry's clients, primarily web applications, developed in React/Next.js, but also mobile apps, developed in React Native + Participate in and contribute to technical analyses.",
       "clients": "My former clients:"
     },
     "alpine": {
