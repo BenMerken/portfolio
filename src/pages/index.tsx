@@ -1,3 +1,4 @@
+import Contact from '@/components/contact';
 import Footer from '@/components/footer';
 
 import './page.styles.scss';
