@@ -5,11 +5,11 @@
   },
   "profile": {
     "title": "Profiel",
-    "text": "Met 4 jaar ervaring als full-stack webontwikkelaar en consultant heb ik een brede expertise opgebouwd in zowel front-end als back-end ontwikkeling, evenals het adviseren van klanten over technische oplossingen.\nNa deze toegewijde jaren in software consultancy ben ik nu op zoek naar een nieuwe uitdaging in in-house productontwikkeling, waar ik mijn technische kennis kan inzetten om te werken aan langetermijnprojecten en de kwaliteit van een product verder kan optimaliseren. Daarnaast ben ik gemotiveerd om me verder te ontwikkelen en sta ik open om aanvullende training te volgen in quality assurance en netwerkbeheer om mijn vaardigheden uit te breiden en een breder scala aan technische verantwoordelijkheden op me te nemen"
+    "text": "Met 4 jaar ervaring als full-stack webontwikkelaar en consultant heb ik een brede expertise opgebouwd in zowel front-end als back-end ontwikkeling, evenals het adviseren van klanten over technische oplossingen.\nNa deze toegewijde jaren in software consultancy ben ik nu op zoek naar een nieuwe uitdaging, waar ik mijn technische kennis en soft skills kan inzetten om te werken aan langetermijnprojecten en de kwaliteit van een product of dienst verder kan optimaliseren, hetzij in een technische, dan wel administratieve context. Daarnaast ben ik gemotiveerd om me verder te ontwikkelen en sta ik open om aanvullende training te volgen om mijn vaardigheden uit te breiden en een breder scala aan verantwoordelijkheden op me te nemen"
   },
   "personalia": {
     "title": "Personalia",
-    "workExperience": "3.5 jaar ervaring",
+    "workExperience": "4 jaar ervaring",
     "dateOfBirth": {
       "month": "april"
     },
@@ -31,7 +31,7 @@
     "title": "Ervaring",
     "appFoundry": {
       "jobTitle": "Software-ontwikkelaar / Consultant",
-      "description": "Ontwikkeling en onderhoud van TypeScript/JavaScript-applicaties, zowel in-house als voor AppFoundrys klanten, voornamelijk webapplicaties, ontwikkeld met React/Next.js, maar ook mobiele applicaties, ontwikkeld met React Native.",
+      "description": "Ontwikkeling en onderhoud van TypeScript/JavaScript-applicaties, zowel in-house als voor AppFoundrys klanten, voornamelijk webapplicaties, ontwikkeld met React/Next.js, maar ook mobiele applicaties, ontwikkeld met React Native + Deelnemen en bijdragen aan technische analyses.",
       "clients": "Mijn voormalige klanten:"
     },
     "alpine": {
