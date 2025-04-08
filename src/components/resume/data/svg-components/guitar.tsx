@@ -8,7 +8,7 @@ const GuitarSVG = () => {
         stroke="#FFFFFF"
         strokeOpacity="0.9"
         strokeWidth="16"
-        strokeLineCap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
@@ -16,7 +16,7 @@ const GuitarSVG = () => {
         stroke="#FFFFFF"
         strokeOpacity="0.9"
         strokeWidth="16"
-        strokeLineCap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
@@ -24,7 +24,7 @@ const GuitarSVG = () => {
         stroke="#FFFFFF"
         strokeOpacity="0.9"
         strokeWidth="16"
-        strokeLineCap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
@@ -32,7 +32,7 @@ const GuitarSVG = () => {
         stroke="#FFFFFF"
         strokeOpacity="0.9"
         strokeWidth="16"
-        strokeLineCap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
@@ -40,7 +40,7 @@ const GuitarSVG = () => {
         stroke="#FFFFFF"
         strokeOpacity="0.9"
         strokeWidth="16"
-        strokeLineCap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
@@ -48,7 +48,7 @@ const GuitarSVG = () => {
         stroke="#FFFFFF"
         strokeOpacity="0.9"
         strokeWidth="16"
-        strokeLineCap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
@@ -56,7 +56,7 @@ const GuitarSVG = () => {
         stroke="#FFFFFF"
         strokeOpacity="0.9"
         strokeWidth="16"
-        strokeLineCap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
@@ -65,7 +65,7 @@ const GuitarSVG = () => {
         stroke="#FFFFFF"
         strokeOpacity="0.9"
         strokeWidth="16"
-        strokeLineCap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
     </Svg>
