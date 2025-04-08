@@ -32,7 +32,7 @@ const Education = ({ data }: EducationProps) => {
       {data.credentials.map((edu, i) => (
         <View key={i} style={educationStyles.section}>
           <View style={educationStyles.degreeAndInstitution}>
-            // @ts-expect-error
+            {/* // @ts-expect-error */}
             <Text style={sharedStyles.rightSubtitle2}>
               {t(edu.degreeName as 'resumeKey')}
             </Text>

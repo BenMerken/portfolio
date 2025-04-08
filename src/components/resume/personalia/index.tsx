@@ -21,7 +21,10 @@ const personaliaStyles = StyleSheet.create({
   avatar: {
     marginBottom: 16,
 
-    borderRadius: '50%',
+    borderTopRightRadius: '50%',
+    borderoTopLeftRadius: '50%',
+    borderBottomleftRadius: '50%',
+    borderBottomRightRadius: '50%',
     border: '4px solid #000000'
   },
   dateOfBirth: {
@@ -96,7 +99,7 @@ const Personalia = ({
         <View style={personaliaStyles.items}>
           {Object.keys(items).map((itemKey, i) => (
             <View key={i} style={personaliaStyles.item}>
-              // TODO: Remove optional check, once email key is required again
+              {/* // TODO: Remove optional check, once email key is required again */}
               {items[itemKey as keyof typeof items]?.svg}
               <Text>{items[itemKey as keyof typeof items]?.name}</Text>
             </View>

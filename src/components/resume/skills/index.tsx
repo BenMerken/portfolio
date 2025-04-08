@@ -25,7 +25,10 @@ const skillsStyles = StyleSheet.create({
     textAlign: 'center',
 
     border: `1px solid ${colors.backgroundPrimary}`,
-    borderRadius: '50%'
+    borderTopRightRadius: '50%',
+    borderoTopLeftRadius: '50%',
+    borderBottomleftRadius: '50%',
+    borderBottomRightRadius: '50%'
   }
 });
 
