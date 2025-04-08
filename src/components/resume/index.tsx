@@ -34,8 +34,7 @@ const documentStyles = StyleSheet.create({
     maxWidth: '100vw',
 
     fontFamily: 'Lato',
-    fontSize: '10pt',
-    lineHeight: '1.2pt'
+    fontSize: '10pt'
   },
   left: {
     flex: 5,
