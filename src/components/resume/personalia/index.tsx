@@ -22,8 +22,8 @@ const personaliaStyles = StyleSheet.create({
     marginBottom: 16,
 
     borderTopRightRadius: '50%',
-    borderoTopLeftRadius: '50%',
-    borderBottomleftRadius: '50%',
+    borderTopLeftRadius: '50%',
+    borderBottomLeftRadius: '50%',
     borderBottomRightRadius: '50%',
     border: '4px solid #000000'
   },

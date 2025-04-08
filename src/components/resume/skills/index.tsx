@@ -26,8 +26,8 @@ const skillsStyles = StyleSheet.create({
 
     border: `1px solid ${colors.backgroundPrimary}`,
     borderTopRightRadius: '50%',
-    borderoTopLeftRadius: '50%',
-    borderBottomleftRadius: '50%',
+    borderTopLeftRadius: '50%',
+    borderBottomLeftRadius: '50%',
     borderBottomRightRadius: '50%'
   }
 });
