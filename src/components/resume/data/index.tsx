@@ -193,6 +193,7 @@ const data: Resume = {
         'Visual Studio Code',
         'Vim',
         'Git',
+        'Docker',
         'ESLint',
         'Confluence',
         'Jira',
