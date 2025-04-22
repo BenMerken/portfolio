@@ -96,7 +96,7 @@ const Personalia = ({
         <View style={personaliaStyles.items}>
           {Object.keys(items).map((itemKey, i) => (
             <View key={i} style={personaliaStyles.item}>
-              // TODO: Remove optional check, once email key is required again
+              {/* // TODO: Remove optional check, once email key is required again */}
               {items[itemKey as keyof typeof items]?.svg}
               <Text>{items[itemKey as keyof typeof items]?.name}</Text>
             </View>
