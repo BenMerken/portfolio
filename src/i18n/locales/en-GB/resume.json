@@ -5,11 +5,11 @@
   },
   "profile": {
     "title": "Profile",
-    "text": "With 4 years of experience as a full-stack web developer and consultant, I have developed extensive expertise in both front-end and back-end development, as well as advising clients on technical solutions.\nAfter these years in consultancy, I am now looking for a new challenge, where I can apply my technical knowledge and soft skills to work on long-term projects and further optimize the quality of a product. Additionally, I am motivated to continue developing myself and am open to taking up additional training to broaden my skills and take on a wider range of technical or administrative responsibilities."
+    "text": "With more than 4 years of experience as a full-stack web developer and consultant, I have developed extensive expertise in both front-end and back-end development, as well as advising clients on technical solutions.\nI enjoy applying my technical knowledge and soft skills to work on long-term projects and to further optimize the quality of a product. Additionally, I am motivated to continue developing myself and am open to taking up additional training to broaden my skills and take on a wider range of technical or administrative responsibilities."
   },
   "personalia": {
     "title": "Personalia",
-    "workExperience": "4 years work experience",
+    "workExperience": "4+ years work experience",
     "dateOfBirth": {
       "month": "April"
     },
@@ -29,6 +29,10 @@
   },
   "experience": {
     "title": "Experience",
+    "solidaris": {
+      "jobTitle": "Programmer Analyst",
+      "description": "Analysis and implementation of new internal applicaties, as well as migration of existing ones, in .NET and Angular."
+    },
     "appFoundry": {
       "jobTitle": "Developer / Consultant",
       "description": "Development and maintenance of TypeScript/Javascript based applications, both in-house and for AppFoundry's clients, primarily web applications, developed in React/Next.js, but also mobile apps, developed in React Native + Participate in and contribute to technical analyses.",

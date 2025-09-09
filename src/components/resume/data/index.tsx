@@ -110,6 +110,17 @@ const data: Resume = {
   },
   experience: [
     {
+      employer: 'Solidaris Vlaanderen',
+      jobTitle: 'experience.solidaris.jobTitle',
+      jobDescription: 'experience.solidaris.description',
+      period: {
+        start: {
+          month: 'months.august',
+          year: 2025
+        }
+      }
+    },
+    {
       employer: 'AppFoundry NV',
       jobTitle: 'experience.appFoundry.jobTitle',
       jobDescription: 'experience.appFoundry.description',
@@ -148,29 +159,16 @@ const data: Resume = {
           year: 2025
         }
       }
-    },
-    {
-      employer: 'Alpine Digital',
-      jobTitle: 'experience.alpine.jobTitle',
-      jobDescription: 'experience.alpine.description',
-      period: {
-        start: {
-          month: 'months.august',
-          year: 2020
-        },
-        end: {
-          month: 'months.october',
-          year: 2020
-        }
-      }
     }
   ],
   skills: [
     {
       category: 'skills.softwareDevelopment',
       skills: [
+        '.NET',
         'TypeScript',
         'JavaScript',
+        'Angular',
         'React',
         'Next.js',
         'Vite',
@@ -182,14 +180,13 @@ const data: Resume = {
         'PWA',
         'React Native',
         'REST',
-        'SQL',
-        'MongoDB',
-        'Agile'
+        'SQL'
       ]
     },
     {
       category: 'Tools',
       skills: [
+        'Visual Studio',
         'Visual Studio Code',
         'Vim',
         'Git',
